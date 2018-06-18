@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath, amsfonts, amsthm}
+\usepackage{todonotes}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\title{Life in $\mathbb{R}^n$}
+\author{Shimal Harichurn}
+
+\begin{document}
+	\maketitle
+	\begin{abstract}
+		\begin{center}
+			This is a set of notes that I'm compiling on my way to understanding and learning Calculus in $\mathbb{R}^n$. Think of this as a user's guide to Calculus in $\mathbb{R}^n$.
+		\end{center}
+	\end{abstract}
+	
+	\section{Introduction}
+		
+	Calculus is hard. I'll be honest I understand more about General Topology (even Algebraic Topology) than I do basic Calculus at this point in time. Heck I think I even understand (truly) basic Category Theory better than basic Calculus at this point in time. \\
+		
+	The reason for this, is I think the folllowing; Topology and Algebra are fields (no pun intended) of mathematics that are very structural in nature to me. You take a set, put a topology on it and voila you have a topological space. \\
+			
+	Calculus is different, there's no real inherent structure (to me at this point in time).
+	\newpage
+	\section{Differentiation in $\mathbb{R}^1$}
+	Let's dive head on into it.
+	\subsection{Prerequisites}
+	To define the derivative in $\mathbb{R}^1$ we need to recap the definition(s) of a limit from metric space theory. The reason for this is that we need the notion of a limit to even define the derivative rigorously. As you may remember there are two different definitions of a limit in metric spaces. They are 
+	\begin{enumerate}
+		\item Limits of sequences
+		\item Limits of functions
+	\end{enumerate}
+	Below we give definitions for each of them. 
+	
+
+	
+	\begin{definition}[Limit of a sequence]
+		We say that the sequence $\{x_n\}_{n \in \mathbb{N}} \subseteq (X, d)$ converges to $x' \in X$ and write $$\lim_{n \to \infty} x_n = x'$$ if for any $\epsilon > 0$ there exists a  natural number $N > 0$ such that $d(x_n, x') < \epsilon$ for all $n > N$
+	\end{definition}
+	
+
+	
+	\begin{definition}[Limit of a function]
+		Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces. Suppose that $E \subseteq X$. Let $f : E \to Y$ and suppose that $p$ is a limit point of $E$. We say that $$\lim_{x \to p} f(x) = q$$ if there exists a $q \in Y$ such that for all $\epsilon > 0$ there exists a $\delta > 0$ such that $$0 < d_X(x, p) < \delta \implies d_Y((f(x), q) < \epsilon$$ for any $x \in B_{(X, d_x)}(p, \delta)$
+	\end{definition}
+	
+	\newpage
+	
+	Now with the two notions of a limit defined we can define the derivative. This is quite an important point which warrants the need for this to have a bit of space so that the reader can see it and not forget it.
+	\medskip
+	\begin{remark}
+		In the definition of the derivative the limit we will be using is the limit of a function!
+	\end{remark}
+	
+	\subsection{Defining the Derivative}
+	
+	
+	\begin{definition}[Derivative as defined in Munkres]
+		Let $A \subseteq \mathbb{R}$ and let $f : A \to \mathbb{R}$ be any function. Suppose that $A$ contains a neighborhood of the point $a$. We define the derivative of $f$ at $a$ by the equation $$f'(a) = \lim_{t \to 0} \frac{f(a+t) - f(a)}{t}$$
+	\end{definition}
+	
+	But wait before we can go any further we \textbf{really need too} unpack this definition and see what's going on under the hood. The reader at this point is probably going \textit{"Hey author, urmm how exactly are we using the definition of the limit of a function here? Heck what is the function we're even taking a limit of here"} and your author will get to that in a second, just bear with me. \\
+		
+	Personally I would define the derivative in a much cleaner way (and I will do so later), but the above definition is basically the convention in mathematics as it's taught in high-school and first-year undergraduate courses and (hopefully) everybody is used to it. \\
+		
+	Understanding this definition will not only bridge the gap between high-school level mathematics and more advanced pure mathematics, but it will also give the reader an idea into the amount of mathematical maturity (e.g asking the simplest questions, which people sometimes say are silly questions) needed to truly understand concepts. Okay I'll shut up for now and proceed to unpack this definition. \\
+	
+	\todo[inline, color=green!40]{1. Explain which neighborhood we're referring to, the subspace $A$ or the parent space $\mathbb{R}$}
+	\todo[inline, color=green!40]{2. Explain which function we're taking the limit of and explain what that function's domain is}
+	\todo[inline, color=green!40]{3. Explain how 1. and 2. above combined means that differentiable functions must have "nice" domains}
+	\todo[inline, color=green!40]{4. Give an example of a function with a domain that's not nice and show why it isn't differentiable in two ways. Show that firstly that no point $a \in A$ has a nbhd in $\mathbb{R}$  which is  a subset of $A$ then go ahead anyway and show that the limit doesn't exist. Showing that the limit doesn't exist shows that the function won't be differentiable and why we must have the nbhd property as a priori for differentiability. This explains what G\&P meant when they said what they said in Differential Topology}
+	\todo[inline, color=green!40]{5. Give your own definition of differentiability}
+\end{document}
