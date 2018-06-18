@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  18 JUN 2018 23:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  18 JUN 2018 23:46
 entering extended mode
 **./main.tex
 (main.tex
@@ -941,13 +941,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
 [5] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 12985 strings out of 493305
- 257017 string characters out of 3138863
- 292764 words of memory out of 3000000
- 16263 multiletter control sequences out of 15000+200000
+ 12981 strings out of 493305
+ 256935 string characters out of 3138863
+ 291666 words of memory out of 3000000
+ 16259 multiletter control sequences out of 15000+200000
  17100 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,7n,80p,753b,628s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,7n,80p,802b,612s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Prog
@@ -960,7 +960,7 @@ nts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (5 pages, 159413 bytes).
+Output written on main.pdf (5 pages, 158728 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
