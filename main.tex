@@ -3,12 +3,18 @@
 
 \usepackage{amsmath, amsfonts, amsthm}
 \usepackage{todonotes}
+\usepackage{comment} 
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
 
+\newtheorem{theorem}{Theorem}
+
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\todog}{\todo[inline, color=green!40]}
 
 \title{A User's Guide to Calculus in $\mathbb{R}^n$}
 \author{Shimal Harichurn}
@@ -51,7 +57,11 @@
 		Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces. Suppose that $E \subseteq X$. Let $f : E \to Y$ and suppose that $p$ is a limit point of $E$. We say that $$\lim_{x \to p} f(x) = q$$ if there exists a $q \in Y$ such that for all $\epsilon > 0$ there exists a $\delta > 0$ such that $$0 < d_X(x, p) < \delta \implies d_Y((f(x), q) < \epsilon$$ for any $x \in B_{(X, d_x)}(p, \delta)$
 	\end{definition}
 	
-		\todo[inline, color=green!40]{1. Show that in $\mathbb{R}^n$ with the usual topology it simplies to $p \in \overline{E}$}
+		\todog{1. Show that in $\mathbb{R}^n$ with the usual topology it simplies to $p \in \overline{E}$}
+		\todog{2. Theorems about limits in $\R^n$ from Hubbard and Hubbard \cite{hubbard2006}}
+		\todog{3. Limits and continuity theorems}
+		\todog{4. Techniques to show limits exists and calculate limits}
+		
 	
 	\newpage
 	
@@ -85,8 +95,9 @@
 	Since $A$ contains a neighborhood of $a$, which I'll call $U$ and since $U$ is open in $\mathbb{R}$, there exists an $r > 0$ such that $B(a, r) \subseteq U \subseteq A$.  Then note that $B(a, r) = (a-r, a+r)$. \\ \\ Now a \textbf{key} realization to make is that $\frac{f(a+t) - f(a)}{t}$ is defined for all $t \neq 0$ such that $a + t$ belongs to the neighborhood (which in this case becomes our open ball) of the point $a$. 
 	The set of all such $t \in \mathbb{R}$ satisfying the properties given above is given by $$\{t \in \mathbb{R} \ | \  t\neq 0 \text{ and } a+t \in B(a, r) = (a-r, a+r)\} = B(0, r) \setminus \{0\}.$$ Thus we can define $\phi : B(0, r) \setminus \{0\} \to \mathbb{R}$ by $$\phi(t) = \frac{f(a+t) - f(a)}{t}$$ and then we can rewrite the derivative of $f$ as $$f'(a) = \lim_{t \to 0} \phi(t).$$ Furthermore note that $0 \in \mathbb{R}$ is a limit point of the set $B(0, r) \setminus \{0\}$ since any neighborhood of $0$ contains infinitely many members of $B(0, r) \setminus \{0\}$. Thus checking against our definition of a limit we see that all our criteria are satisfied so we can thus take the limit of $\phi$ as $t \to 0$\\
 	
+	\todog{Example of a function that is defined on an open set but which is not differentiable}
 	
-	\todo[inline, color=green!40]{4. Give an example of a function with a domain that's not nice and show why it isn't differentiable in two ways. Show that firstly that no point $a \in A$ has a nbhd in $\mathbb{R}$  which is  a subset of $A$ then go ahead anyway and show that the limit doesn't exist. Showing that the limit doesn't exist shows that the function won't be differentiable and why we must have the nbhd property as a priori for differentiability. This explains what G\&P meant when they said what they said in Differential Topology}
+	\todog{4. Give an example of a function with a domain that's not nice and show why it isn't differentiable in two ways. Show that firstly that no point $a \in A$ has a nbhd in $\mathbb{R}$  which is  a subset of $A$ then go ahead anyway and show that the limit doesn't exist. Showing that the limit doesn't exist shows that the function won't be differentiable and why we must have the nbhd property as a priori for differentiability. This explains what G\&P meant when they said what they said in Differential Topology}
 
 	
 	
@@ -100,6 +111,19 @@
 	\begin{definition}[My more general definition of the Derivative]
 		Let $A \subseteq \mathbb{R}$ and let $f : A \to \mathbb{R}$ be any function. Pick $a \in \operatorname{Int}(A)$ and choose $r > 0$ such that $B(a, r) \subseteq \operatorname{Int}(A)$. Define $\phi : B(0, r) \setminus \{0\} \to \mathbb{R}$ by $$\phi(t) = \frac{f(a+t) - f(a)}{t}.$$ Then we define the derivative of $f$ at $a$ as $$f'(a) = \lim_{t \to 0} \phi(t)$$ provided that the limit exists.
 	\end{definition}
+	
+	\section{Integration in $\mathbb{R}^1$}
+	
+	For an \textbf{excellent} treatment of Riemann Integration in $\mathbb{R}^1$ using Darboux sums (which make computing the upper and lower integral sums easier) see \cite{math310notes}. We list a bevy of results that are extremely useful in using the Fundamental Theorem of Calculus rigorously.
+	
+	\begin{theorem}
+		Let $f : [a, b] \to \mathbb{R}$. If $f \in C\left( [a, b]\right)$, then $f \in R\left( [a, b]\right)$. (In words if $f$ is continuous on $[a, b]$ then $f$ is Riemann integrable on $[a, b]$).
+	\end{theorem}
+	
+	\todog{1. Fundamental Theorem of Calculus Part 1}
+	\todog{2. Fundamental Theorem of Calculus Part 2}
+	\todog{3. Measure theory results}
+	
 	
 	\bibliography{bibliography}{}
 	\bibliographystyle{plain}

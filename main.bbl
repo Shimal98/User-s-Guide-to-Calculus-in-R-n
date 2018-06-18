@@ -1,8 +1,19 @@
 \begin{thebibliography}{1}
 
+\bibitem{hubbard2006}
+J.~Hubbard.
+\newblock {\em Vector Calculus, Linear Algebra, and Differential Forms: A
+  Unified Approach - Third Edition}.
+\newblock Pearson Education, Limited, 2006.
+
 \bibitem{munkres2018analysis}
 J.R. Munkres.
 \newblock {\em Analysis On Manifolds}.
 \newblock CRC Press, 2018.
+
+\bibitem{math310notes}
+S.~Shindin.
+\newblock {\em MATH310 - Real Analysis: Notes}.
+\newblock University of Kwa-Zulu Natal, 2018.
 
 \end{thebibliography}
