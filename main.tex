@@ -11,8 +11,14 @@
 \newtheorem{theorem}{Theorem}
 \numberwithin{theorem}{subsection}
 
+\newtheorem{corollary}{Corollary}
+\numberwithin{corollary}{subsection}
+
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
+
+\theoremstyle{point}
+\newtheorem*{point}{\textbf{Important Point}}
 
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\todog}{\todo[inline, color=green!40]}
@@ -36,43 +42,81 @@
 			
 	Calculus is different, there's no real inherent structure (to me at this point in time).
 	\newpage
+	
+	\section{Recap of Metric Spaces}
+	Before we can get started with calculus proper, we need to recap some stuff from metric spaces specifically pertaining to continuity and limits. 
+	
+	\subsection{Continuity}  
+	
+	
+	\begin{definition}[Continuity]
+		Let $(X, d_x)$ and $(Y, d_Y)$ be metric spaces and let $f : (X, d_X) \to (Y, d_Y)$ be any function. Then $f$ is continuous at $a \in X$ if for all  $\epsilon > 0$ there exists a $\delta > 0$ such that $$d_X(a, x) < \delta \implies d_Y\left(f(a), f(x) \right) < \epsilon$$ for all $x \in B_{(X, d_X)}(a, \delta)$.  We say that $f$ is continuous (or continuous on $X$) if $f$ is continuous for each $x \in X$.
+	\end{definition}
+	
+	\subsection{Limits}
+	
+	Limits will be invaluable to our study of calculus in $\R^n$. For example to even define the derivative in $\mathbb{R}^1$ we need to know the definition(s) of a limit in metric spaces. The reason for this is that we need the notion of a limit to even define the derivative rigorously. \\
+		
+	 As you may remember there are two different definitions of a limit in metric spaces. They are 
+	 \begin{enumerate}
+	 	\item Limits of sequences
+	 	\item Limits of functions
+	 \end{enumerate}
+	 \medskip
+	 Below we give definitions for each of them. 
+	 
+	 \medskip
+	 
+	 \begin{definition}[Limit of a sequence]
+	 	We say that the sequence $\{x_n\}_{n \in \mathbb{N}} \subseteq (X, d)$ converges to $x' \in X$ and write $$\lim_{n \to \infty} x_n = x'$$ if for any $\epsilon > 0$ there exists a  natural number $N > 0$ such that $d(x_n, x') < \epsilon$ for all $n > N$
+	 \end{definition}
+	 
+	 \medskip
+	 
+	 \begin{definition}[Limit of a function]
+	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces. Suppose that $E \subseteq X$. Let $f : E \to Y$ and suppose that $p$ is a limit point of $E$. We say that $$\lim_{x \to p} f(x) = q$$ if there exists a point $q \in Y$ with the property that for all $\epsilon > 0$ there exists a $\delta > 0$ such that $$0 < d_X(x, p) < \delta \implies d_Y((f(x), q) < \epsilon$$ for any $x \in B_{(X, d_x)}(p, \delta)$
+	 \end{definition}
+	 
+	 \medskip
+	 
+	 As it turns out we can express these two different notions of a limit in terms of another and vice versa in quite a nice way.
+	 
+	 \medskip	 
+	 
+	 \begin{theorem}
+	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces, let $E \subseteq X$ and let $f : E \to Y$ be any function and let $p$ be a limit point of $E$. Then $$\lim_{x \to p} f(x) = q$$ if and only if $$\lim_{n \to \infty} f\left( p_n\right)  = q$$ for every (non-constant) sequence $\{p_n\} \subseteq E$ such that $$\lim_{n \to \infty} p_n = p$$
+	 \end{theorem}
+	 
+	 \todog{1. Show that in $\mathbb{R}^n$ with the usual topology it simplies to $p \in \overline{E}$}
+	 \todog{2. Theorems about limits in $\R^n$ from Hubbard and Hubbard \cite{hubbard2006}}
+	 \todog{3. Limits and continuity theorems}
+	 \todog{4. Techniques to show limits exists and calculate limits}
+	 \todog{The whole of chapter 4 in Rudin is a treasure trove of theorems that would be useful here.}
+	 
+	 This next theorem while fairly innocuous at first glance to a Topologist like myself but if calculus was a game, then this is the holy grail of cheat codes. (The reason why is that derivatives are defined as limits of functions and if we know that $f$ is continuous, then we just evaluate $f$ at $p$ and we're done, we'd have just showed the existence and calculated the derivative like that, boom.)
+	 
+	 \begin{theorem}
+	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces, let $E \subseteq X$ and let $f : E \to Y$ . Assume that $p$ is a limit point of $E$, then $f$ is continuous at $p$ if and only if $$\lim_{x \to p} f(x) = f(p)$$
+	 \end{theorem}
+	 
+	 This has a extremely useful corollary to check for discontinuities of a function
+	 
+	 \begin{corollary}
+	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces, let $E \subseteq X$ and let $f : E \to Y$ . Assume that $p$ is a limit point of $E$, then $f$ is not continuous at $p$ if and only if $$\lim_{x \to p} f(x) \neq f(p).$$ (Also if $ \lim_{x \to p} f(x)$ does not exist then vacuously we have that $\lim_{x \to p} f(x) \neq f(p)$)
+	 \end{corollary}
+	 
+	
+	\newpage
 	\section{Differentiation in $\mathbb{R}^1$}
 	Let's dive head on into it.
 	\subsection{Prerequisites}
-	To define the derivative in $\mathbb{R}^1$ we need to recap the definition(s) of a limit from metric space theory. The reason for this is that we need the notion of a limit to even define the derivative rigorously. As you may remember there are two different definitions of a limit in metric spaces. They are 
-	\begin{enumerate}
-		\item Limits of sequences
-		\item Limits of functions
-	\end{enumerate}
-	\medskip
-	Below we give definitions for each of them. 
-	
-	\medskip
-	
-	\begin{definition}[Limit of a sequence]
-		We say that the sequence $\{x_n\}_{n \in \mathbb{N}} \subseteq (X, d)$ converges to $x' \in X$ and write $$\lim_{n \to \infty} x_n = x'$$ if for any $\epsilon > 0$ there exists a  natural number $N > 0$ such that $d(x_n, x') < \epsilon$ for all $n > N$
-	\end{definition}
-	
-	\medskip
-	
-	\begin{definition}[Limit of a function]
-		Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces. Suppose that $E \subseteq X$. Let $f : E \to Y$ and suppose that $p$ is a limit point of $E$. We say that $$\lim_{x \to p} f(x) = q$$ if there exists a $q \in Y$ such that for all $\epsilon > 0$ there exists a $\delta > 0$ such that $$0 < d_X(x, p) < \delta \implies d_Y((f(x), q) < \epsilon$$ for any $x \in B_{(X, d_x)}(p, \delta)$
-	\end{definition}
-	
-		\todog{1. Show that in $\mathbb{R}^n$ with the usual topology it simplies to $p \in \overline{E}$}
-		\todog{2. Theorems about limits in $\R^n$ from Hubbard and Hubbard \cite{hubbard2006}}
-		\todog{3. Limits and continuity theorems}
-		\todog{4. Techniques to show limits exists and calculate limits}
-		\todog{The whole of chapter 4 in Rudin is a treasure trove of theorems that would be useful here.}
-		
-	
 	
 	
 	Now with the two notions of a limit defined we can define the derivative. This is quite an important point which warrants the need for this to have a bit of space so that the reader can see it and not forget it.
 	\medskip
-	\begin{remark}
+	\begin{point}
 		In the definition of the derivative the limit we will be using is the limit of a function!
-	\end{remark}
+	\end{point}
 	
 	\subsection{Defining the Derivative}
 	
