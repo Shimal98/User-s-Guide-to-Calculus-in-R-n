@@ -15,6 +15,9 @@
 \newtheorem{corollary}{Corollary}
 \numberwithin{corollary}{subsection}
 
+\newtheorem{result}{Result}
+
+
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
 
@@ -139,13 +142,57 @@
 	 	\item Voila we've shown our new function is continuous
 	 \end{enumerate}
 	 
-	 "But wait hang on there Shimal....what if we can't decompose a given function $f$into a composition of functions from our base pack of functions?" Well then you're going to have to prove continuity of that function $f$ using the $\epsilon$-$\delta$ definition of continuity, but the thing is that those functions are quite few and far between so in most cases we won' t have to resort to using the definition of continuity to prove continuity.
+	 "But wait hang on there Shimal....what if we can't decompose a given function $f$ into a composition of functions from our base pack of functions?" Well then you're going to have to prove continuity of that function $f$ using the $\epsilon$-$\delta$ definition of continuity, but the thing is that those functions are quite few and far between so in most cases we won' t have to resort to using the definition of continuity to prove continuity.
 	 
 	 \subsubsection{Base pack of continuous functions}
 	 
-	 \todog{$f(x) = x$}
-	 \todog{$f(x) = |x|$}
-	 \todog{$f(x) = \sqrt{x}$}
+	 \begin{result}
+	 	Let $f : \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = x$. Then $f$ is continuous on $\mathbb{R}$. 
+	 \end{result}
+	 
+	 \begin{proof}
+	 	Pick $a \in \mathbb{R}$ and let $\epsilon > 0$ be given. We need to find a $\delta > 0$ such that $|x-a| < \delta \implies |f(x)-f(a)| < \epsilon$ for all $x \in B(a, \delta) = (a- \delta, a+ \delta)$. \\
+	 	
+	 	Since $|f(x) - f(a)| = |x-a|$ (because $f(x) =  x$ for all $x \in \mathbb{R}$ by definition of $f$) this suggests we choose $\delta = \epsilon$. \\ \\
+	 	Put $\delta = \epsilon$, then 	 	\begin{align*}	 	
+		 	|x-a| < \delta &\implies |x-a| < \epsilon \\
+		 	&\implies  |f(x) - f(a)| < \epsilon
+	 	\end{align*}
+	 	for all $x \in B(a, \delta)$. Thus $f$ is continuous at $a \in \mathbb{R}$ and since $a$ was chosen arbitrarily we have that $f$ is continuous on $\mathbb{R}$
+	 \end{proof}
+	 
+	 \hrulefill
+	 
+	  \begin{result}
+	  	Let $f : \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = |x|$. Then $f$ is continuous on $\mathbb{R}$. 
+	  \end{result}
+	  
+	  To prove this next result we make use of the following theorem on metric spaces.
+	 
+	 \begin{theorem}
+	 	Let $(X, d)$ be a metric space and let $a \in X$ be any fixed point. Then the map $f : (X, d) \to \mathbb{R}$ defined by $f(x) = d(x, a)$ is continuous.
+	 \end{theorem}
+	 
+	 With this theorem at hand we can now prove the above result.
+	 
+	 \begin{proof}
+	 	Note that $(\mathbb{R}, d)$ is a metric space when endowed with the usual Euclidean metric which is $d : \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ defined by $d(x, y) = |x, y|$ for all $x, y \in \mathbb{R}$. (Whenever we refer to $\R$ in this book we always refer to it as this metric space). Thus since $0 \in \mathbb{R}$, the map $f : \mathbb{R} \to \mathbb{R}$ defined by $f(x) = d(x, 0) = |x|$ is continuous.
+	 \end{proof}
+	 
+	 	 \hrulefill
+	 	 
+	 	 \medskip
+	 	 
+	 \begin{result}
+	 		Let $f : \mathbb{R_{+}} \to \mathbb{R}$ be defined by $f(x) = \sqrt{x}$. Then $f$ is uniformly continuous (and thus continuous) on $\mathbb{R}$. 
+	 \end{result}
+	 
+	 The following proof is taken from \cite{sqrtx}
+	 
+	 \begin{proof}
+	 	Let $\epsilon > 0$ be given. Put $\delta = \epsilon^2$. Then for $|x-y| < \delta$ we have  $$|\sqrt x - \sqrt y|^2 \leq |\sqrt x - \sqrt y||\sqrt x + \sqrt y| = |x-y| < \epsilon^2 \implies |\sqrt x - \sqrt y| < \epsilon. $$ Thus $f$ is uniformly continuous on $\mathbb{R}_{+}$ and thus continuous on $\mathbb{R}$
+	 \end{proof}
+
 	 \todog{$f(x) = c$ for some $c \in \mathbb{R}$}
 	 \todog{Trigonometric functions}
 	 
