@@ -4,6 +4,7 @@
 \usepackage{amsmath, amsfonts, amsthm}
 \usepackage{todonotes}
 \usepackage{comment} 
+\usepackage{epigraph}
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
@@ -52,6 +53,22 @@
 	\begin{definition}[Continuity]
 		Let $(X, d_x)$ and $(Y, d_Y)$ be metric spaces and let $f : (X, d_X) \to (Y, d_Y)$ be any function. Then $f$ is continuous at $a \in X$ if for all  $\epsilon > 0$ there exists a $\delta > 0$ such that $$d_X(a, x) < \delta \implies d_Y\left(f(a), f(x) \right) < \epsilon$$ for all $x \in B_{(X, d_X)}(a, \delta)$.  We say that $f$ is continuous (or continuous on $X$) if $f$ is continuous for each $x \in X$.
 	\end{definition}
+	
+	Here are some really powerful theorems and corollaries that will make our lives way way way easier.
+	
+	\begin{theorem}
+		Suppose that $X$, $Y$ and $Z$ are metric spaces and $f : X \to Y$, $g : f[X] \to Z$ are continuous mappings. Then the composition mapping $h = g \circ f : X \to Z$ defined by $$h(x) = g(f(x))$$ for $x \in X$ is continuous.
+	\end{theorem}
+	
+	\begin{theorem}
+		Let $(X, d)$ be a metric space and let $f, g : X \to \mathbb{C}$ be continuous functions. Then $f + g$ and $f\cdot g$ are continuous on $X$. If in addition we have $g(x) \neq 0$ for all $x \in X$, then $\frac{f}{g}$ is continuous on $X$.
+	\end{theorem}
+	
+	\begin{corollary}
+			Let $(X, d)$ be a metric space and let $f, g : X \to \mathbb{R}$ be continuous functions. Then $f + g$ and $f\cdot g$ are continuous on $X$. If in addition we have $g(x) \neq 0$ for all $x \in X$, then $\frac{f}{g}$ is continuous on $X$.
+	\end{corollary}
+	
+	\todog{Show how the above theorem implies the corollary. Use the fact that the restriction of $f, g$ from the codomain of $\mathbb{C}$ to the set $$\Gamma = \{z \in \mathbb{C} \ | \ \operatorname{Im}(z) = 0\}$$ is continuous, then use the fact that $\mathbb{R} \times \{0\}$ is homeomorphic to $\Gamma$ and then the fact that $\R \times \{0\}$ is homeomorphic to $\R$ to conclude and arrive at the corollary.}
 	
 	\subsection{Limits}
 	
@@ -104,6 +121,35 @@
 	 \begin{corollary}
 	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces, let $E \subseteq X$ and let $f : E \to Y$ . Assume that $p$ is a limit point of $E$, then $f$ is not continuous at $p$ if and only if $$\lim_{x \to p} f(x) \neq f(p).$$ (Also if $ \lim_{x \to p} f(x)$ does not exist then vacuously we have that $\lim_{x \to p} f(x) \neq f(p)$)
 	 \end{corollary}
+	 
+	 We finish off this section with a user's guide to continuity in metric spaces.
+	 
+	 \subsection{User's guide to continuity in metric spaces}
+	 
+	 \epigraph{Life is short, don't always prove continuity using $\epsilon$'s and $\delta$'s}{\textit{Shimal Harichurn \\ Your Author}}
+	 
+	 My quote above is basically saying that proving continuity of every function using the $\epsilon$-$\delta$ definition of continuity (or even the topological definition of continuity) is a waste of time. We have some powerful theorems at hand that will make our lives a lot easier, so why not use them?  \\ \\ This section is intended to show the reader how we actually prove continuity of functions between metric spaces in practice. In practice nobody actually proves continuity by the $\epsilon$-$\delta$ definition. What we actually do is the following.
+	 
+	 
+	 \begin{enumerate}
+	 	\item We start off with a base pack of functions which we prove are continuous using the  $\epsilon$-$\delta$ definition of continuity. 
+	 	\item We compose these base pack of functions to arrive at new functions which are continuous, or given some function which we want to prove is continuous we decompose it into a composition of functions which we know to be continuous
+	 	\item Composition of continuous functions are continuous
+	 	\item We throw in the fact that addition of continuous functions are continuous
+	 	\item Voila we've shown our new function is continuous
+	 \end{enumerate}
+	 
+	 "But wait hang on there Shimal....what if we can't decompose a given function $f$into a composition of functions from our base pack of functions?" Well then you're going to have to prove continuity of that function $f$ using the $\epsilon$-$\delta$ definition of continuity, but the thing is that those functions are quite few and far between so in most cases we won' t have to resort to using the definition of continuity to prove continuity.
+	 
+	 \subsubsection{Base pack of continuous functions}
+	 
+	 \todog{$f(x) = x$}
+	 \todog{$f(x) = |x|$}
+	 \todog{$f(x) = \sqrt{x}$}
+	 \todog{$f(x) = c$ for some $c \in \mathbb{R}$}
+	 \todog{Trigonometric functions}
+	 
+	 
 	 
 	
 	\newpage
