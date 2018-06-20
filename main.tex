@@ -5,6 +5,15 @@
 \usepackage{todonotes}
 \usepackage{comment} 
 \usepackage{epigraph}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+
+\urlstyle{same}
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
@@ -59,11 +68,11 @@
 	
 	Here are some really powerful theorems and corollaries that will make our lives way way way easier.
 	
-	\begin{theorem}
+	\begin{theorem}\hypertarget{composition-continuity}
 		Suppose that $X$, $Y$ and $Z$ are metric spaces and $f : X \to Y$, $g : f[X] \to Z$ are continuous mappings. Then the composition mapping $h = g \circ f : X \to Z$ defined by $$h(x) = g(f(x))$$ for $x \in X$ is continuous.
 	\end{theorem}
 	
-	\begin{theorem}
+	\begin{theorem}\hypertarget{operations-cont}
 		Let $(X, d)$ be a metric space and let $f, g : X \to \mathbb{C}$ be continuous functions. Then $f + g$ and $f\cdot g$ are continuous on $X$. If in addition we have $g(x) \neq 0$ for all $x \in X$, then $\frac{f}{g}$ is continuous on $X$.
 	\end{theorem}
 	
@@ -137,8 +146,8 @@
 	 \begin{enumerate}
 	 	\item We start off with a base pack of functions which we prove are continuous using the  $\epsilon$-$\delta$ definition of continuity. 
 	 	\item We compose these base pack of functions to arrive at new functions which are continuous, or given some function which we want to prove is continuous we decompose it into a composition of functions which we know to be continuous
-	 	\item Then we appeal to the fact that composition of continuous functions are continuous (see Theorem 2.1.1)
-	 	\item We throw in the fact that addition of continuous functions are continuous (see Corollary 2.1.1 or Theorem 5.1.2)
+	 	\item Then we appeal to the fact that composition of continuous functions are continuous (see \hyperlink{composition-continuity}{Theorem 2.1.1})
+	 	\item We throw in the fact that addition of continuous functions are continuous (see \hyperlink{operations-cont}{Corollary 2.1.1} or \hyperlink{multi-operations-cont}{Theorem 5.1.2})
 	 	\item Voila we've shown our new function is continuous
 	 \end{enumerate}
 	 
@@ -280,7 +289,7 @@
 		
 		\bigskip
 		
-		\begin{theorem}
+		\begin{theorem}\hypertarget{multi-operations-cont}
 			Let $(X, d)$ be a metric space and suppose that \\ $\mathbf{f}, \mathbf{g} : X \to \mathbb{R}^k$ are continuous functions, then $\mathbf{f} + \mathbf{g} : X \to \mathbb{R}^k$ defined by $$\left( \mathbf{f} + \mathbf{g}\right) (x) = \left( f_1(x) + g_1(x), \dots, f_k(x) + g_k(x)\right) $$ is continuous on $X$ and $\mathbf{f \cdot g} : X \to \mathbb{R}$ defined by $$\left( \mathbf{f \cdot g} \right)(x) =  \left( f_1(x) , \dots, f_k(x) \right)  \odot  \left( g_1(x), \dots,  g_k(x)\right) = f_1(x)\cdot g_1(x) + \dots f_k(x) \cdot g_k(x)$$ is continuous on $X$.
 		\end{theorem}
 		
