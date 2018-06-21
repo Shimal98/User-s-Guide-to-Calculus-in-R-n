@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  21 JUN 2018 21:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  21 JUN 2018 22:09
 entering extended mode
 **./main.tex
 (main.tex
@@ -1035,48 +1035,58 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 25.
  [6]
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
-Overfull \hbox (8.32854pt too wide) in paragraph at lines 44--44
+Overfull \hbox (8.32854pt too wide) in paragraph at lines 46--46
 [][]\OT1/cmr/bx/n/12 Definition 1.0.2.1 \OT1/cmr/m/n/12 (Limit of a se-quence)\
 OT1/cmr/bx/n/12 . []\OT1/cmr/m/n/12 We say that the se-quence $\OMS/cmsy/m/n/12
  f\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g[] 
  []
 
 [7] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 134--138
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--138
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--138
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-[13]) [14] (chapters/chapter2.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+[13]
+! Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.238 ... \right\rbrace = \R \times \R \time \dots
+                                                   \times\underbrace{U}_{\te...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+) [14] (chapters/chapter2.tex
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1157,7 +1167,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [19
 
-]) [20] (chapters/chapter4.tex
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 40.
+
+) [20] (chapters/chapter4.tex
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1176,7 +1195,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 7.
 
 
-Overfull \hbox (13.12418pt too wide) detected at line 19
+Overfull \hbox (13.12418pt too wide) detected at line 21
 [] \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = [] \OMS/cmsy/m/n/12 
  [] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\O
 T1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 g[]\OT1/cmr/m/n/12 (\OML/cm
@@ -1240,15 +1259,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D50F456D3E788BBEE97B3FEE0959CD0A;950.
+(rerunfilecheck)             Checksum: D8F4EFC05A647149A375998975D05A68;1016.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 16837 strings out of 493305
- 316078 string characters out of 3138863
- 376757 words of memory out of 3000000
- 19952 multiletter control sequences out of 15000+200000
- 20271 words of font info for 77 fonts, out of 3000000 for 9000
+ 16842 strings out of 493305
+ 316112 string characters out of 3138863
+ 376710 words of memory out of 3000000
+ 19954 multiletter control sequences out of 15000+200000
+ 20916 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,10n,81p,834b,882s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
@@ -1266,9 +1285,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (25 pages, 270837 bytes).
+Output written on main.pdf (25 pages, 276061 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 355 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

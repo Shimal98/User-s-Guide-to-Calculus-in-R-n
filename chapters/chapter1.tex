@@ -24,6 +24,8 @@
 	
 	\todog{Show how the above theorem implies the corollary. Use the fact that the restriction of $f, g$ from the codomain of $\mathbb{C}$ to the set $$\Gamma = \{z \in \mathbb{C} \ | \ \operatorname{Im}(z) = 0\}$$ is continuous, then use the fact that $\mathbb{R} \times \{0\}$ is homeomorphic to $\Gamma$ and then the fact that $\R \times \{0\}$ is homeomorphic to $\R$ to conclude and arrive at the corollary.}
 	
+
+	
 	\newpage
 	
 	\subsection{Limits}
@@ -227,5 +229,13 @@
 
 	 \todog{$f(x) = c$ for some $c \in \mathbb{R}$}
 	 \todog{Trigonometric functions}
+	 
+	 \begin{result}[Projections mappings are continuous]
+	 	Let $\pi_i : \mathbb{R}^n \to \mathbb{R}$ be defined by $$\pi_i(x) = \pi_i(x_1, ..., x_n) = x_i$$ for $x = (x_1, .., x_n) \in \R^n$ and $i \in \{1, \dots, n\}$. Then $\pi_i$ is continuous.
+	 \end{result}
+	 
+	 \begin{proof}
+	 	Let $U$ be open in $\R$, then $$\pi_i^{-1}[U] = \left\lbrace x \in \R^n \ | \ \pi_i(x) \in U \right\rbrace = \R \times \R \time \dots \times\underbrace{U}_{\text{$i$th position}} \times \R \times \dots \times \R$$ and since the topology on $\R^n$ induced by the euclidean metric and the product topology on $\R^n$ are equivalent, it follows that since $\R$ and $U$ are open in $\R$ a finite product of them is open in $\R^n$. Thus $\pi_i^{-1}[U]$ is open in $\R^n$. Thus $\pi_i^{-1}$ is continuous.
+	 \end{proof}
 	 
 	 
