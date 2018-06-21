@@ -13,4 +13,5 @@
 \contentsline {subsection}{\numberline {3.1.1}What is $dx$?}{20}{subsection.3.1.1}
 \contentsline {chapter}{\numberline {4}Differentiation in $\mathbb {R}^n$}{21}{chapter.4}
 \contentsline {subsection}{\numberline {4.0.1}Prerequisites}{21}{subsection.4.0.1}
-\contentsline {chapter}{\numberline {5}$C^k$ and $C^{\infty }$ functions}{23}{chapter.5}
+\contentsline {section}{\numberline {4.1}Defining the derivative}{22}{section.4.1}
+\contentsline {chapter}{\numberline {5}$C^k$ and $C^{\infty }$ functions}{25}{chapter.5}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  21 JUN 2018 21:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  21 JUN 2018 23:32
 entering extended mode
 **./chapter4.tex
 (chapter4.tex
@@ -855,75 +855,6 @@ Overfull \hbox (9.06943pt too wide) in paragraph at lines 21--23
     $\OML/cmm/m/it/10 X$
  []
 
-! Undefined control sequence.
-l.24 		\todog
-             {Show that co-ordinate projections are continuous}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.24 		\todog{S
-               how that co-ordinate projections are continuous}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no S in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no j in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 24--25
-[]
- []
-
 
 ! LaTeX Error: Environment remark undefined.
 
@@ -931,7 +862,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 		\begin{remark}
+l.27 		\begin{remark}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -944,7 +875,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 			N
+l.28 			N
          ote that $\odot$ refers to the dot product on the vector space $\ma...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -998,7 +929,7 @@ Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
 <recently read> \mathbb 
                         
-l.29 ...e dot product on the vector space $\mathbb
+l.28 ...e dot product on the vector space $\mathbb
                                                   {R}^k$. The above theorem ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1114,7 +1045,7 @@ Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
 <recently read> \mathbb 
                         
-l.29 ...c spaces (which could possibly be $\mathbb
+l.28 ...c spaces (which could possibly be $\mathbb
                                                   {R}^m$ for any $m \in \mat...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1129,7 +1060,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no y in font nullfont!
 ! Undefined control sequence.
-l.29 ...y be $\mathbb{R}^m$ for any $m \in \mathbb
+l.28 ...y be $\mathbb{R}^m$ for any $m \in \mathbb
                                                   {N}$)  are continuous, and...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1243,7 +1174,7 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.29 ...can be found in \cite{rudin1964principles}
+l.28 ...can be found in \cite{rudin1964principles}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1253,7 +1184,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Citation `rudin1964principles' on page  undefined on input line 
-29.
+28.
 
 Missing character: There is no ] in font nullfont!
 
@@ -1263,11 +1194,413 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30 		\end{remark}
+l.29 		\end{remark}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 28--30
+[]
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 28--30
+\OMS/cmsy/m/n/10 $
+ []
+
+
+Overfull \hbox (12.59032pt too wide) in paragraph at lines 28--30
+\OML/cmm/m/it/10 R[]$
+ []
+
+
+Overfull \hbox (15.26627pt too wide) in paragraph at lines 28--30
+\OML/cmm/m/it/10 R[]$
+ []
+
+
+Overfull \hbox (18.22453pt too wide) in paragraph at lines 28--30
+\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (9.12497pt too wide) in paragraph at lines 28--30
+\OML/cmm/m/it/10 N$
+ []
+
+
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 28--30
+[]
+ []
+
+! Undefined control sequence.
+l.31 		\section
+               {Defining the derivative}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 		\section{D
+                 efining the derivative}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 31--32
+[]
+ []
+
+
+! LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 		\begin{definition}
+                         [name of defn]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 		\begin{definition}[
+                          name of defn]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+l.35 			Let $U \subseteq \mathbb
+                                {R}^m$ be an open set. Let $f : U \to \mathb...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+l.35 ...^m$ be an open set. Let $f : U \to \mathbb
+                                                  {R}^m$ be any function. Pi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+l.35 ... \in U$ and choose $r > 0$ so that $B_{(\R
+                                                  ^n, d)}(a, r) \subseteq U$...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+<recently read> \R 
+                   
+l.35 ...$ denote the class of linear maps from $\R
+                                                  ^m \to \R^n$. Define $\phi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.35 ...the class of linear maps from $\R^m \to \R
+                                                  ^n$. Define $\phi : B_{(\R...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.35 ...rom $\R^m \to \R^n$. Define $\phi : B_{(\R
+                                                  ^n, d)}(a, r)  \setminus \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.35 ..._{(\R^n, d)}(a, r)  \setminus \{0\} \to \R
+                                                  ^n$ by $$\phi(h) = \frac{f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 34--35
+[]
+ []
+
+
+Overfull \hbox (18.47354pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10 U \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (15.26627pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10 R[]$
+ []
+
+
+Overfull \hbox (11.52776pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (20.69576pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10 U \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (15.26627pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10 R[]$
+ []
+
+
+Overfull \hbox (14.73029pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10 a \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (7.91803pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10 U$
+ []
+
+
+Overfull \hbox (15.34488pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10 r >
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (58.62996pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; r\OT1/cmr/m/n/10 ) \OM
+S/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (7.91803pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10 U$
+ []
+
+
+Overfull \hbox (6.25002pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/10  $
+ []
+
+
+Overfull \hbox (25.81717pt too wide) in paragraph at lines 34--35
+[] \OMS/cmsy/m/n/10 ![]$
+ []
+
+
+Overfull \hbox (11.51384pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10  \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (53.07446pt too wide) in paragraph at lines 34--35
+\OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; r\OT1/cmr/m/n/10 ) \OM
+S/cmsy/m/n/10 n
+ []
+
+
+Overfull \hbox (33.2211pt too wide) in paragraph at lines 34--35
+\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 0\OMS/cmsy/m/n/10 g ![]$
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{definition}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 		\end{definition}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.36 		\end{definition}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.36 		\end{definition}
+                       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (136.07579pt too wide) detected at line 36
+\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 h\OT1/cmr/m/n/10 ) = []
+ []
 
 )
 ! Emergency stop.
@@ -1277,10 +1610,10 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 22 strings out of 493305
- 412 string characters out of 3138863
+ 24 strings out of 493305
+ 435 string characters out of 3138863
  56825 words of memory out of 3000000
- 3670 multiletter control sequences out of 15000+200000
+ 3672 multiletter control sequences out of 15000+200000
  4567 words of font info for 17 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  18i,3n,21p,598b,75s stack positions out of 5000i,500n,10000p,200000b,50000s

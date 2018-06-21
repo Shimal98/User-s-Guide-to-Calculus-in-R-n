@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  21 JUN 2018 22:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  21 JUN 2018 23:52
 entering extended mode
 **./main.tex
 (main.tex
@@ -1067,12 +1067,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
@@ -1080,7 +1080,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--191
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.238 ... \right\rbrace = \R \times \R \time \dots
+l.250 ... \right\rbrace = \R \times \R \time \dots
                                                    \times\underbrace{U}_{\te...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1206,7 +1206,24 @@ m/m/it/12 x\OT1/cmr/m/n/12 ) + [] \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm
 
 [21
 
-]) [22] (chapters/chapter5.tex
+]
+Underfull \hbox (badness 10000) in paragraph at lines 40--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--47
+
+ []
+
+[22]) [23] (chapters/chapter5.tex [24
+
+]
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1236,9 +1253,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-) (main.bbl [23
-
-] [24
+) (main.bbl [25] [26
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
@@ -1252,28 +1267,24 @@ Underfull \hbox (badness 1442) in paragraph at lines 37--44
 rg / w / index . php ? title =
  []
 
-) [25]
+) [27]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D8F4EFC05A647149A375998975D05A68;1016.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 612E878A0E9406E3C262E3537AEC5F79;1087.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 16841 strings out of 493305
- 316101 string characters out of 3138863
- 376710 words of memory out of 3000000
- 19954 multiletter control sequences out of 15000+200000
+ 16849 strings out of 493305
+ 316194 string characters out of 3138863
+ 376706 words of memory out of 3000000
+ 19955 multiletter control sequences out of 15000+200000
  20916 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,81p,834b,882s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,10n,81p,834b,866s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
@@ -1289,9 +1300,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (25 pages, 275711 bytes).
+Output written on main.pdf (27 pages, 284817 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 373 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -181,6 +181,19 @@
 	 \subsubsection{Base pack of continuous functions}
 	 
 	 \begin{result}
+	 	Let $c \in \Re$ be fixed and let $f : \R \to \R$ be defined by $f(x) = c$. Then $f$ is continuous.
+	 \end{result}
+	 
+	 \begin{proof}
+	 	Pick $a \in \R$ and let $\epsilon > 0$ be give. Put $\delta = 1$. Then $|a- x| < \delta \implies |f(a) - f(x)| = |c-c| = 0 < \epsilon$, thus $f$ is continuous.
+	 \end{proof}
+	 
+	 
+	 \begin{remark}
+	 	Note that any value for $\delta$ in the above proof will actually work.
+	 \end{remark}
+	 
+	 \begin{result}
 	 	Let $f : \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = x$. Then $f$ is continuous on $\mathbb{R}$. 
 	 \end{result}
 	 
@@ -227,8 +240,7 @@
 	 	Let $\epsilon > 0$ be given. Put $\delta = \epsilon^2$. Then for $|x-y| < \delta$ we have  $$|\sqrt x - \sqrt y|^2 \leq |\sqrt x - \sqrt y||\sqrt x + \sqrt y| = |x-y| < \epsilon^2 \implies |\sqrt x - \sqrt y| < \epsilon. $$ Thus $f$ is uniformly continuous on $\mathbb{R}_{+}$ and thus continuous on $\mathbb{R}$
 	 \end{proof}
 
-	 \todog{$f(x) = c$ for some $c \in \mathbb{R}$}
-	 \todog{Trigonometric functions}
+	\todog{Trigonometric functions}
 	 
 	 \begin{result}[Projections mappings are continuous]
 	 	Let $\pi_i : \mathbb{R}^n \to \mathbb{R}$ be defined by $$\pi_i(x) = \pi_i(x_1, ..., x_n) = x_i$$ for $x = (x_1, .., x_n) \in \R^n$ and $i \in \{1, \dots, n\}$. Then $\pi_i$ is continuous.

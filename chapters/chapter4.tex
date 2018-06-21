@@ -27,3 +27,28 @@
 		\begin{remark}
 			Note that $\odot$ refers to the dot product on the vector space $\mathbb{R}^k$. The above theorem shows that addition of vector-valued functions whose domains are metric spaces (which could possibly be $\mathbb{R}^m$ for any $m \in \mathbb{N}$)  are continuous, and so is taking the dot product of vector valued functions. Proofs of the above theorems can be found in \cite{rudin1964principles}
 		\end{remark}
+		
+		\section{Defining the derivative}
+		
+		
+		\begin{definition}[Rigorous definition of the Derivative in $\R^n$]
+			Let $U \subseteq \mathbb{R}^m$ be an open set. Let $f : U \to \mathbb{R}^m$ be any function. Pick $a \in U$ and choose $r > 0$ so that $B_{(\R^n, d)}(a, r) \subseteq U$. Let $\Gamma(\R^m, R^n)$ denote the set of linear maps from $\R^m \to \R^n$. Define $\phi_L : B_{(\R^n, d)}(a, r)  \setminus \{0\} \to \R^n$ by $$\phi_L(h) = \frac{f(a+h) - f(a) - L(h)}{|h|}$$ for $L \in \Gamma(\R^m, R^n)$. Then if there exists a $L \in \Gamma(\R^m, R^n)$ such that $$\lim_{|h| \to 0} \phi_L(h) = 0$$ we say that $f$ is differentiable at $a$ and we call the linear map $L$, the derivative of $f$ at $a$.
+		\end{definition}
+		
+		
+		\begin{remark}
+			Now this is a rigorous but fairly cumbersome way to define the derivative. We'll show now how we'll work our way from this definition to the usual definition you'd see in a book like Munkres. 
+			\\ \\
+			Firstly note that $0 \in \R^n$ is a  limit point for the domain of $\phi_L$ so it makes sense to take the limit of $\phi_L$ as $|h| \to 0 \in \R$. 
+			\\ \\
+			Secondly note that since $U$ is open, there will \textbf{always} exist an $r > 0$ such that $B_{(\R^n, d)}(a, r) \subseteq U$. And since the well-definedness of the function $\phi_L$ depends on this $r > 0$ and such an $r$ always exists, we may safely remove it from our definition (as most textbook authors do) and thus remove the explicit need to introduce the new function $\phi_L$
+			\\ \\
+			Finally since we don't need to explicitly introduce the new function $\phi_L$ which depends on a specific linear map, we can rewrite our definition as follows below.
+		\end{remark} 
+		
+		
+		
+		\begin{definition}[Conventional Book definition of the Derivative in $\R^n$]
+			Let $U \subseteq \mathbb{R}^m$ be an open set. Let $f : U \to \mathbb{R}^m$ be any function. Pick $a \in U$. We say that $f$ is differentiable at $a$ if there exists a linear map $L : \R^m \to \R^n$ such that $$\lim_{|h| \to 0}\frac{f(a+h)-f(a)-L(h)}{|h|}=0.$$ The linear map $L$ is called the derivative of $f$ at $a$ and is denoted $Df(a)$.
+		\end{definition}
+		
