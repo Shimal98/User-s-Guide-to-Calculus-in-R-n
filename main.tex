@@ -17,6 +17,7 @@
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
+\numberwithin{definition}{subsection}
 
 \newtheorem{theorem}{Theorem}
 \numberwithin{theorem}{subsection}
@@ -26,6 +27,8 @@
 
 \newtheorem{result}{Result}
 
+\newtheorem{example}{Example}
+\numberwithin{example}{subsection}
 
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
@@ -180,13 +183,28 @@
 	 
 	 
 	 \begin{definition}
-	 	Let $E \subseteq \R$ and let $f : E \to \R$ be any function. We say that $$\lim_{t \to x}f(t) = \alpha$$ where $\alpha$ and $x$ are in the extended real number system, if for every neighborhood $U$ of $A$ there exists a neighborhood $V$ of $x$ such that $V \cap E$ is non-empty and such that $f(t) \in U$ for all $t \in V \cap E$ for which $t \neq x$.
+	 	Let $E \subseteq \R$ and let $f : E \to \R$ be any function. We say that $$\lim_{t \to x}f(t) = \alpha$$ where $\alpha$ and $x$ are in the extended real number system, if for every neighborhood $U$ of $\alpha$ there exists a neighborhood $V$ of $x$ such that $V \cap E$ is non-empty and such that $f(t) \in U$ for all $t \in V \cap E$ for which $t \neq x$.
 	 \end{definition}
 	 
 	 
 	 \begin{remark}
 	 	This definition above coincides with \hyperlink{limit-function-defn}{Definition 2.3} when $\alpha$ and $x$ are real numbers.
 	 \end{remark}
+	 
+	 Let's get our hands dirty with an example of this definition in action.
+	 
+	 \begin{example}
+	 	Let $f : \R \setminus \{0\} \to \R$ be defined by $f(x) = e^x$. We claim that $$\lim_{t \to \infty} f(t) = \infty$$
+	 \end{example}
+	 
+	 \begin{proof}
+	 	Let $U$ be a neighbourhood of $\infty$. Then $U = (c, \infty)$ for some $c \in \R$. We need to find a neighbourhood $V$ of $\infty$ such that $V \cap\left(  \R \setminus \{0\}\right) \neq \emptyset $ and for which $f(t) \in (c, \infty)$ for all $t \in V \cap\left(  \R \setminus \{0\}\right) $ for which $t \neq \infty$. \\ \\
+	 	Since $f$ is only defined on $\R \setminus \{0\}$ and not on the extended reals, then the  previous line simplifies to us needing to find a neighbourhood $V$ of $\infty$ such that $V \cap\left(  \R \setminus \{0\}\right) \neq \emptyset $. and $f(t) \in (c, \infty)$ for all $t \in V \cap\left(  \R \setminus \{0\}\right) $.  We have two cases to analyse.\\ \\
+	 	If $c < 1$ then let $V = (0, \infty)$ because then we have $V \cap \R \setminus \{0\} = V = (0, \infty)$ and for any $t \in V$ we have $f(t) = e^t > e^0 = 1 > c$ since $f$ is monotonically increasing on $V$. Thus for any $t \in V = V \cap\left(  \R \setminus \{0\}\right)$ we have $f(t) \in (c, \infty) = U$ as desired. \\ \\
+	 	If $ c \geq 1$, then we need to find a neighborhood $V$ such that $e^t \in (c, \infty)$ for all $t \in V \cap \R \setminus \{0\}$. Note then that $f(t) = e^t \in (c, \infty) = U \implies e^t > c \implies t > \ln(c)$. So if we let $V = (ln(c), \infty)$ then for any $V \cap \R \setminus \{0\} = V$ we have $f(t) = e^t > e^{\ln(c)} = c$ since $f$ is monotonically increasing on $V$ as desired.
+	 \end{proof}
+	 
+	 
 	 
 	 The analogue of \hyperlink{limit-thm}{Theorem 2.2.4} is still true 
 	 
