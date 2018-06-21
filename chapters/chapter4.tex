@@ -1,0 +1,28 @@
+\section{Differentiation in $\mathbb{R}^n$}
+		
+		\epigraph{I only care about derivatives I can compose}{Mozart...probably}
+		
+		\medskip
+		
+		\subsection{Prerequisites}
+		
+		
+		\bigskip
+		
+		\begin{theorem}
+			Let $(X, d)$ be a metric space and let $f_1, ..., f_k$ be real valued functions on $X$  (that is $f_i : X \to \mathbb{R}$ for $i \in \{1, \dots k\}$ ) and let $\mathbf{f} : X \to \mathbb{R}^k$ be defined by $$\mathbf{f}(x) = \left( f_1(x), \dots, f_k(x)\right)$$ then $\mathbf{f}$ is continuous if and only if each of the functions $f_1, \dots, f_k$ is continuous.  
+		\end{theorem}
+		
+		\bigskip
+		
+		\begin{theorem}\hypertarget{multi-operations-cont}
+			Let $(X, d)$ be a metric space and suppose that \\ $\mathbf{f}, \mathbf{g} : X \to \mathbb{R}^k$ are continuous functions, then $\mathbf{f} + \mathbf{g} : X \to \mathbb{R}^k$ defined by $$\left( \mathbf{f} + \mathbf{g}\right) (x) = \left( f_1(x) + g_1(x), \dots, f_k(x) + g_k(x)\right) $$ is continuous on $X$ and $\mathbf{f \cdot g} : X \to \mathbb{R}$ defined by $$\left( \mathbf{f \cdot g} \right)(x) =  \left( f_1(x) , \dots, f_k(x) \right)  \odot  \left( g_1(x), \dots,  g_k(x)\right) = f_1(x)\cdot g_1(x) + \dots f_k(x) \cdot g_k(x)$$ is continuous on $X$.
+		\end{theorem}
+		
+		\todog{Show that co-ordinate projections are continuous}
+		
+		\medskip
+		
+		\begin{remark}
+			Note that $\odot$ refers to the dot product on the vector space $\mathbb{R}^k$. The above theorem shows that addition of vector-valued functions whose domains are metric spaces (which could possibly be $\mathbb{R}^m$ for any $m \in \mathbb{N}$)  are continuous, and so is taking the dot product of vector valued functions. Proofs of the above theorems can be found in \cite{rudin1964principles}
+		\end{remark}

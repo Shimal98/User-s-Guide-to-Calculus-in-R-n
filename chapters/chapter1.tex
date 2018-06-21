@@ -1,0 +1,231 @@
+    \section{Recap of Metric Spaces}
+	Before we can get started with calculus proper, we need to recap some stuff from metric spaces specifically pertaining to continuity and limits. 
+	
+	\subsection{Continuity}  
+	
+	
+	\begin{definition}[Continuity]
+		Let $(X, d_x)$ and $(Y, d_Y)$ be metric spaces and let $f : (X, d_X) \to (Y, d_Y)$ be any function. Then $f$ is continuous at $a \in X$ if for all  $\epsilon > 0$ there exists a $\delta > 0$ such that $$d_X(a, x) < \delta \implies d_Y\left(f(a), f(x) \right) < \epsilon$$ for all $x \in B_{(X, d_X)}(a, \delta)$.  We say that $f$ is continuous (or continuous on $X$) if $f$ is continuous for each $x \in X$.
+	\end{definition}
+	
+	Here are some really powerful theorems and corollaries that will make our lives way way way easier.
+	
+	\begin{theorem}\hypertarget{composition-continuity}
+		Suppose that $X$, $Y$ and $Z$ are metric spaces and $f : X \to Y$, $g : f[X] \to Z$ are continuous mappings. Then the composition mapping $h = g \circ f : X \to Z$ defined by $$h(x) = g(f(x))$$ for $x \in X$ is continuous.
+	\end{theorem}
+	
+	\begin{theorem}\hypertarget{operations-cont}
+		Let $(X, d)$ be a metric space and let $f, g : X \to \mathbb{C}$ be continuous functions. Then $f + g$ and $f\cdot g$ are continuous on $X$. If in addition we have $g(x) \neq 0$ for all $x \in X$, then $\frac{f}{g}$ is continuous on $X$.
+	\end{theorem}
+	
+	\begin{corollary}
+			Let $(X, d)$ be a metric space and let $f, g : X \to \mathbb{R}$ be continuous functions. Then $f + g$ and $f\cdot g$ are continuous on $X$. If in addition we have $g(x) \neq 0$ for all $x \in X$, then $\frac{f}{g}$ is continuous on $X$.
+	\end{corollary}
+	
+	\todog{Show how the above theorem implies the corollary. Use the fact that the restriction of $f, g$ from the codomain of $\mathbb{C}$ to the set $$\Gamma = \{z \in \mathbb{C} \ | \ \operatorname{Im}(z) = 0\}$$ is continuous, then use the fact that $\mathbb{R} \times \{0\}$ is homeomorphic to $\Gamma$ and then the fact that $\R \times \{0\}$ is homeomorphic to $\R$ to conclude and arrive at the corollary.}
+	
+	\newpage
+	
+	\subsection{Limits}
+	
+	Limits will be invaluable to our study of calculus in $\R^n$. For example to even define the derivative in $\mathbb{R}^1$ we need to know the definition(s) of a limit in metric spaces. The reason for this is that we need the notion of a limit to even define the derivative rigorously. \\
+		
+	 As you may remember there are two different definitions of a limit in metric spaces. They are 
+	 \begin{enumerate}
+	 	\item Limits of sequences
+	 	\item Limits of functions
+	 \end{enumerate}
+	 \medskip
+	 Below we give definitions for each of them. 
+	 
+	 \medskip
+	 
+	 \begin{definition}[Limit of a sequence]
+	 	We say that the sequence $\{x_n\}_{n \in \mathbb{N}} \subseteq (X, d)$ converges to $x' \in X$ and write $$\lim_{n \to \infty} x_n = x'$$ if for any $\epsilon > 0$ there exists a  natural number $N > 0$ such that $d(x_n, x') < \epsilon$ for all $n > N$
+	 \end{definition}
+	 
+	 \medskip
+	 
+	 \begin{definition}[Limit of a function]\hypertarget{limit-function-defn}
+	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces. Suppose that $E \subseteq X$. Let $f : E \to Y$ and suppose that $p$ is a limit point of $E$. We say that $$\lim_{x \to p} f(x) = q$$ if there exists a point $q \in Y$ with the property that for all $\epsilon > 0$ there exists a $\delta > 0$ such that $$0 < d_X(x, p) < \delta \implies d_Y((f(x), q) < \epsilon$$ for any $x \in B_{(X, d_x)}(p, \delta)$
+	 \end{definition}
+	 
+	 \medskip
+	 
+	 As it turns out we can express these two different notions of a limit in terms of another and vice versa in quite a nice way.
+	 
+	 \medskip	 
+	 
+	 \begin{theorem}
+	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces, let $E \subseteq X$ and let $f : E \to Y$ be any function and let $p$ be a limit point of $E$. Then $$\lim_{x \to p} f(x) = q$$ if and only if $$\lim_{n \to \infty} f\left( p_n\right)  = q$$ for every (non-constant) sequence $\{p_n\} \subseteq E$ such that $$\lim_{n \to \infty} p_n = p$$
+	 \end{theorem}
+	 
+	 \todog{1. Show that in $\mathbb{R}^n$ with the usual topology it simplies to $p \in \overline{E}$}
+	 \todog{2. Theorems about limits in $\R^n$ from Hubbard and Hubbard \cite{hubbard2006}}
+	 \todog{3. Limits and continuity theorems}
+	 \todog{4. Techniques to show limits exists and calculate limits}
+	 \todog{The whole of chapter 4 in Rudin is a treasure trove of theorems that would be useful here.}
+	 
+	 This next theorem while fairly innocuous at first glance to a Topologist like myself but if calculus was a game, then this is the holy grail of cheat codes. (The reason why is that derivatives are defined as limits of functions and if we know that $f$ is continuous, then we just evaluate $f$ at $p$ and we're done, we'd have just showed the existence and calculated the derivative like that, boom.)
+	 
+	 \begin{theorem}
+	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces, let $E \subseteq X$ and let $f : E \to Y$ . Assume that $p$ is a limit point of $E$, then $f$ is continuous at $p$ if and only if $$\lim_{x \to p} f(x) = f(p)$$
+	 \end{theorem}
+	 
+	 This has a extremely useful corollary to check for discontinuities of a function
+	 
+	 \begin{corollary}
+	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces, let $E \subseteq X$ and let $f : E \to Y$ . Assume that $p$ is a limit point of $E$, then $f$ is not continuous at $p$ if and only if $$\lim_{x \to p} f(x) \neq f(p).$$ (Also if $ \lim_{x \to p} f(x)$ does not exist then vacuously we have that $\lim_{x \to p} f(x) \neq f(p)$)
+	 \end{corollary}
+	 
+	 \begin{theorem}
+	 	Let $X$ be a metric space and $E \subseteq X$. Suppose that $p$ is a limit point of $E$ and $f, g : X \to \mathbb{C}$ and that $$\lim_{x \to p} f(x) = a \in \mathbb{C}, \ \ \ \lim_{x \to p} g(x) = b \in \mathbb{C}$$Then  	
+	 	\begin{align*}
+	 	&\text{(i)} \ \  \ \ \lim_{x \to p}(f+g)(x) = a + b; \\
+	 	&\text{(ii)} \ \  \ \ \lim_{x \to p}(f\cdot g)(x) = a \cdot b; \\
+	 	&\text{(iii)} \ \  \ \ \lim_{x \to p}\left( \frac{f}{g}\right) (x) = \frac{a}{b} \ \ \ \text{if} \ \ b\neq 0.
+	 	\end{align*}
+	 	
+	 \end{theorem}
+	 
+	 This yields the weaker result;
+	 
+	  \begin{theorem}\hypertarget{limit-thm}
+	  	Let $X$ be a metric space and $E \subseteq X$. Suppose that $p$ is a limit point of $E$ and $f, g : X \to \mathbb{R}$ and that $$\lim_{x \to p} f(x) = a \in \R, \ \ \ \lim_{x \to p} g(x) = b \in \R.$$Then  	
+	  	\begin{align*}
+	  	&\text{(i)} \ \  \ \ \lim_{x \to p}(f+g)(x) = a + b; \\
+	  	&\text{(ii)} \ \  \ \ \lim_{x \to p}(f\cdot g)(x) = a \cdot b; \\
+	  	&\text{(iii)} \ \  \ \ \lim_{x \to p}\left( \frac{f}{g}\right) (x) = \frac{a}{b} \ \ \ \text{if} \ \ b\neq 0.
+	  	\end{align*}
+	  	
+	  \end{theorem}
+	  
+	  \newpage
+	 
+	 \subsection{Infinite Limits and Limits at Infinity}
+	 
+	 
+	 \begin{definition}[Extended Real Number System]
+	 	The extended real numbers is obtained by adding two elements and $+\infty$ and $-\infty$ to $\R$. We'll denote the extended real numbers by the symbol $\overline{\R}$ (Not to be confused with the topological closure of $\R$)
+	 \end{definition}
+	 
+	 
+	 \begin{definition}[Neighborhoods of Infinity]
+	 	For any $c \in \R$, the set\\ $\{x \in \R \ | \ x > c\}$ is called a neighborhood of $+\infty$ and is written $(c, +\infty)$. Similarly, the set $\{ x \in \R \ | \ x < c\}$ which will be denoted by $(-\infty, c)$ is called a neighborhood of $-\infty$.
+	 \end{definition}
+	 
+	 
+	 \begin{definition}
+	 	Let $E \subseteq \R$ and let $f : E \to \R$ be any function. We say that $$\lim_{t \to x}f(t) = \alpha$$ where $\alpha$ and $x$ are in the extended real number system, if for every neighborhood $U$ of $\alpha$ there exists a neighborhood $V$ of $x$ such that $V \cap E$ is non-empty and such that $f(t) \in U$ for all $t \in V \cap E$ for which $t \neq x$.
+	 \end{definition}
+	 
+	 
+	 \begin{remark}
+	 	This definition above coincides with \hyperlink{limit-function-defn}{Definition 2.3} when $\alpha$ and $x$ are real numbers.
+	 \end{remark}
+	 
+	 Let's get our hands dirty with an example of this definition in action.
+	 
+	 \begin{example}
+	 	Let $f : \R \setminus \{0\} \to \R$ be defined by $f(x) = e^x$. We claim that $$\lim_{t \to \infty} f(t) = \infty$$
+	 \end{example}
+	 
+	 \begin{proof}
+	 	Let $U$ be a neighbourhood of $\infty$. Then $U = (c, \infty)$ for some $c \in \R$. We need to find a neighbourhood $V$ of $\infty$ such that $V \cap\left(  \R \setminus \{0\}\right) \neq \emptyset $ and for which $f(t) \in (c, \infty)$ for all $t \in V \cap\left(  \R \setminus \{0\}\right) $ for which $t \neq \infty$. \\ \\
+	 	Since $f$ is only defined on $\R \setminus \{0\}$ and not on the extended reals, then the  previous line simplifies to us needing to find a neighbourhood $V$ of $\infty$ such that $V \cap\left(  \R \setminus \{0\}\right) \neq \emptyset $. and $f(t) \in (c, \infty)$ for all $t \in V \cap\left(  \R \setminus \{0\}\right) $.  We have two cases to analyse.\\ \\
+	 	If $c < 1$ then let $V = (0, \infty)$ because then we have $V \cap \R \setminus \{0\} = V = (0, \infty)$ and for any $t \in V$ we have $f(t) = e^t > e^0 = 1 > c$ since $f$ is monotonically increasing on $V$. Thus for any $t \in V = V \cap\left(  \R \setminus \{0\}\right)$ we have $f(t) \in (c, \infty) = U$ as desired. \\ \\
+	 	If $ c \geq 1$, then we need to find a neighborhood $V$ such that $e^t \in (c, \infty)$ for all $t \in V \cap \R \setminus \{0\}$. Note then that $f(t) = e^t \in (c, \infty) = U \implies e^t > c \implies t > \ln(c)$. So if we let $V = (ln(c), \infty)$ then for any $V \cap \R \setminus \{0\} = V$ we have $f(t) = e^t > e^{\ln(c)} = c$ since $f$ is monotonically increasing on $V$ as desired.
+	 \end{proof}
+	 
+	 
+	 
+	 The analogue of \hyperlink{limit-thm}{Theorem 2.2.4} is still true 
+	 
+	 \begin{theorem}
+	 		Let $X$ be a metric space and $E \subseteq X$. Suppose that $p \in \overline{\R}$ and $f, g : X \to \mathbb{R}$ and that $$\lim_{x \to p} f(x) = a \in \overline{\R}, \ \ \ \lim_{x \to p} g(x) = b \in \overline{\R}.$$Then  	
+	 		\begin{align*}
+	 		&\text{(i)} \lim_{x \to p} f(x) = a' \implies a' = a\\
+	 		&\text{(ii)} \ \  \ \ \lim_{x \to p}(f+g)(x) = a + b; \\
+	 		&\text{(iii)} \ \  \ \ \lim_{x \to p}(f\cdot g)(x) = a \cdot b; \\
+	 		&\text{(iv)} \ \  \ \ \lim_{x \to p}\left( \frac{f}{g}\right) (x) = \frac{a}{b} \ \ \ \text{if} \ \ b\neq 0.
+	 		\end{align*}	 		
+	 \end{theorem}
+	 
+	 \begin{point}
+	 	Note that $\infty -\infty$, $0 \cdot \infty$, $\frac{\infty}{\infty}$ and $\frac{a}{0}$ are not defined.
+	 \end{point}
+	 
+	 
+	 We finish off this section with a user's guide to continuity in metric spaces.
+	 
+	 \newpage
+	 \subsection{User's guide to continuity in metric spaces}
+	 
+	 \epigraph{Life is short, don't always prove continuity using $\epsilon$'s and $\delta$'s}{\textit{Shimal Harichurn \\ Your Author}}
+	 
+	 My quote above is basically saying that proving continuity of every function using the $\epsilon$-$\delta$ definition of continuity (or even the topological definition of continuity) is a waste of time. We have some powerful theorems at hand that will make our lives a lot easier, so why not use them?  \\ \\ This section is intended to show the reader how we actually prove continuity of functions between metric spaces in practice. In practice nobody actually proves continuity by the $\epsilon$-$\delta$ definition. What we actually do is the following.
+	 
+	 
+	 \begin{enumerate}
+	 	\item We start off with a base pack of functions which we prove are continuous using the  $\epsilon$-$\delta$ definition of continuity. 
+	 	\item We compose these base pack of functions to arrive at new functions which are continuous, or given some function which we want to prove is continuous we decompose it into a composition of functions which we know to be continuous
+	 	\item Then we appeal to the fact that composition of continuous functions are continuous (see \hyperlink{composition-continuity}{Theorem 2.1.1})
+	 	\item We throw in the fact that addition of continuous functions are continuous (see \hyperlink{operations-cont}{Corollary 2.1.1} or \hyperlink{multi-operations-cont}{Theorem 5.1.2})
+	 	\item Voila we've shown our new function is continuous
+	 \end{enumerate}
+	 
+	 "But wait hang on there Shimal....what if we can't decompose a given function $f$ into a composition of functions from our base pack of functions?" Well then you're going to have to prove continuity of that function $f$ using the $\epsilon$-$\delta$ definition of continuity, but the thing is that those functions are quite few and far between so in most cases we won' t have to resort to using the definition of continuity to prove continuity.
+	 
+	 \subsubsection{Base pack of continuous functions}
+	 
+	 \begin{result}
+	 	Let $f : \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = x$. Then $f$ is continuous on $\mathbb{R}$. 
+	 \end{result}
+	 
+	 \begin{proof}
+	 	Pick $a \in \mathbb{R}$ and let $\epsilon > 0$ be given. We need to find a $\delta > 0$ such that $|x-a| < \delta \implies |f(x)-f(a)| < \epsilon$ for all $x \in B(a, \delta) = (a- \delta, a+ \delta)$. \\
+	 	
+	 	Since $|f(x) - f(a)| = |x-a|$ (because $f(x) =  x$ for all $x \in \mathbb{R}$ by definition of $f$) this suggests we choose $\delta = \epsilon$. \\ \\
+	 	Put $\delta = \epsilon$, then 	 	\begin{align*}	 	
+		 	|x-a| < \delta &\implies |x-a| < \epsilon \\
+		 	&\implies  |f(x) - f(a)| < \epsilon
+	 	\end{align*}
+	 	for all $x \in B(a, \delta)$. Thus $f$ is continuous at $a \in \mathbb{R}$ and since $a$ was chosen arbitrarily we have that $f$ is continuous on $\mathbb{R}$
+	 \end{proof}
+	 
+	 \hrulefill
+	 
+	  \begin{result}
+	  	Let $f : \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = |x|$. Then $f$ is continuous on $\mathbb{R}$. 
+	  \end{result}
+	  
+	  To prove this next result we make use of the following theorem on metric spaces.
+	 
+	 \begin{theorem}
+	 	Let $(X, d)$ be a metric space and let $a \in X$ be any fixed point. Then the map $f : (X, d) \to \mathbb{R}$ defined by $f(x) = d(x, a)$ is continuous.
+	 \end{theorem}
+	 
+	 With this theorem at hand we can now prove the above result.
+	 
+	 \begin{proof}
+	 	Note that $(\mathbb{R}, d)$ is a metric space when endowed with the usual Euclidean metric which is $d : \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ defined by $d(x, y) = |x, y|$ for all $x, y \in \mathbb{R}$. (Whenever we refer to $\R$ in this book we always refer to it as this metric space). Thus since $0 \in \mathbb{R}$, the map $f : \mathbb{R} \to \mathbb{R}$ defined by $f(x) = d(x, 0) = |x|$ is continuous.
+	 \end{proof}
+	 
+	 	 \hrulefill
+	 	 
+	 	 \medskip
+	 	 
+	 \begin{result}
+	 		Let $f : \mathbb{R_{+}} \to \mathbb{R}$ be defined by $f(x) = \sqrt{x}$. Then $f$ is uniformly continuous (and thus continuous) on $\mathbb{R}$. 
+	 \end{result}
+	 
+	 The following proof is taken from \cite{sqrtx}
+	 
+	 \begin{proof}
+	 	Let $\epsilon > 0$ be given. Put $\delta = \epsilon^2$. Then for $|x-y| < \delta$ we have  $$|\sqrt x - \sqrt y|^2 \leq |\sqrt x - \sqrt y||\sqrt x + \sqrt y| = |x-y| < \epsilon^2 \implies |\sqrt x - \sqrt y| < \epsilon. $$ Thus $f$ is uniformly continuous on $\mathbb{R}_{+}$ and thus continuous on $\mathbb{R}$
+	 \end{proof}
+
+	 \todog{$f(x) = c$ for some $c \in \mathbb{R}$}
+	 \todog{Trigonometric functions}
+	 
+	 

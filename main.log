@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  21 JUN 2018 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  21 JUN 2018 20:38
 entering extended mode
 **./main.tex
 (main.tex
@@ -416,6 +416,14 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip48
 \dth@everypar=\toks26
 )
+("C:\Users\Shimal H\AppData\Roaming\MiKTeX\2.9\tex\latex\subfiles\subfiles.sty"
+Package: subfiles 2012/05/23 Federico Garcia
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks27
+\verbatim@line=\toks28
+\verbatim@in@stream=\read1
+))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\todonotes\todonotes.sty"
 Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
@@ -428,8 +436,8 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
-\XKV@toks=\toks27
-\XKV@tempa@toks=\toks28
+\XKV@toks=\toks29
+\XKV@tempa@toks=\toks30
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex"))
 \XKV@depth=\count99
@@ -464,7 +472,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ty"
 ("C:\Users\Shimal H\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfuti
 l-common.tex"
-\pgfutil@everybye=\toks29
+\pgfutil@everybye=\toks31
 \pgfutil@tempdima=\dimen112
 \pgfutil@tempdimb=\dimen113
 
@@ -509,12 +517,12 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 ("C:\Users\Shimal H\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkey
 s.code.tex"
-\pgfkeys@pathtoks=\toks30
-\pgfkeys@temptoks=\toks31
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
 
 ("C:\Users\Shimal H\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkey
 sfiltered.code.tex"
-\pgfkeys@tmptoks=\toks32
+\pgfkeys@tmptoks=\toks34
 ))
 \pgf@x=\dimen116
 \pgf@y=\dimen117
@@ -525,14 +533,14 @@ sfiltered.code.tex"
 \pgf@xc=\dimen122
 \pgf@yc=\dimen123
 \w@pgf@writea=\write3
-\r@pgf@reada=\read1
+\r@pgf@reada=\read2
 \c@pgf@counta=\count100
 \c@pgf@countb=\count101
 \c@pgf@countc=\count102
 \c@pgf@countd=\count103
-\t@pgf@toka=\toks33
-\t@pgf@tokb=\toks34
-\t@pgf@tokc=\toks35
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
 
 ("C:\Users\Shimal H\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.
 cfg"
@@ -573,9 +581,9 @@ er.code.tex"
 \pgfmath@dimen=\dimen124
 \pgfmath@count=\count106
 \pgfmath@box=\box29
-\pgfmath@toks=\toks36
-\pgfmath@stack@operand=\toks37
-\pgfmath@stack@operation=\toks38
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
 )
 ("C:\Users\Shimal H\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunc
 tions.code.tex"
@@ -729,8 +737,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 e.tex")
 \pgffor@iter=\dimen151
 \pgffor@skip=\dimen152
-\pgffor@stack=\toks39
-\pgffor@toks=\toks40
+\pgffor@stack=\toks41
+\pgffor@toks=\toks42
 ))
 ("C:\Users\Shimal H\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
 kz\tikz.code.tex"
@@ -914,7 +922,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip56
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 14.
+Package hyperref Info: Option `colorlinks' set `true' on input line 15.
 \c@definition=\count133
 \c@theorem=\count134
 \c@corollary=\count135
@@ -922,25 +930,25 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 14.
 \c@example=\count137
 
 
-Package amsthm Warning: Unknown theoremstyle `point' on input line 36.
+Package amsthm Warning: Unknown theoremstyle `point' on input line 37.
 
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 ("C:\Users\Shimal H\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -949,12 +957,12 @@ LaTeX Font Info:    ... okay on input line 46.
 \scratchbox=\box39
 \nofMPsegments=\count139
 \nofMParguments=\count140
-\everyMPshowfont=\toks41
+\everyMPshowfont=\toks43
 \MPscratchCnt=\count141
 \MPscratchDim=\dimen167
 \MPnumerator=\count142
 \makeMPintoPDFobject=\count143
-\everyMPtoPDFconversion=\toks42
+\everyMPtoPDFconversion=\toks44
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -970,7 +978,7 @@ G,.JBIG2,.JB2,.eps]
 )
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring ON on input line 46.
+Package hyperref Info: Link coloring ON on input line 47.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -980,28 +988,28 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count144
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
 
 (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 48.
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 48.
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
@@ -1012,130 +1020,130 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [2]
+ [2] (chapters/chapter1.tex
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 92.
+ine 25.
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 [4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 201--205
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--205
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--205
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-[10] [11]
+[10]) [11] (chapters/chapter2.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 302.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 302.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 302.
+(hyperref)                removing `superscript' on input line 1.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-[14] [15]
+[14]) [15] (chapters/chapter3.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 355.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 355.
-
-[16]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 369.
+(hyperref)                removing `superscript' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 369.
+(hyperref)                removing `math shift' on input line 1.
+
+) [16] (chapters/chapter4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 369.
+(hyperref)                removing `superscript' on input line 1.
 
 
-Overfull \hbox (13.12418pt too wide) detected at line 387
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Overfull \hbox (13.12418pt too wide) detected at line 19
 [] \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = [] \OMS/cmsy/m/n/12 
  [] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\O
 T1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 g[]\OT1/cmr/m/n/12 (\OML/cm
@@ -1144,58 +1152,59 @@ m/m/it/12 x\OT1/cmr/m/n/12 ) + [] \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm
 /12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )
  []
 
+) [17] (chapters/chapter5.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 398.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 398.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 398.
+(hyperref)                removing `superscript' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 398.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 398.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\infty' on input line 398.
+(hyperref)                removing `superscript' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 398.
+(hyperref)                removing `\infty' on input line 1.
 
-(main.bbl
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+) (main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 []\OT1/cmr/m/n/12 Alex Provost (https://math.stackexchange.com/users/59556/alex
 
  []
 
-[17]) [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
+) [18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C7F6E05A7925F53BACD959E778CF3CB9;921.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 408.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
- 16749 strings out of 493305
- 314139 string characters out of 3138863
- 375559 words of memory out of 3000000
- 19897 multiletter control sequences out of 15000+200000
+ 16801 strings out of 493305
+ 315627 string characters out of 3138863
+ 376262 words of memory out of 3000000
+ 19927 multiletter control sequences out of 15000+200000
  18375 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,80p,802b,658s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,10n,81p,834b,879s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -1211,7 +1220,7 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (18 pages, 257436 bytes).
+Output written on main.pdf (18 pages, 257434 bytes).
 PDF statistics:
  311 PDF objects out of 1000 (max. 8388607)
  94 named destinations out of 1000 (max. 500000)

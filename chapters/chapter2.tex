@@ -1,0 +1,52 @@
+	\section{Differentiation in $\mathbb{R}^1$}
+	Let's dive head on into it.
+	\subsection{Prerequisites}
+	
+	
+	Now with the two notions of a limit defined we can define the derivative. This is quite an important point which warrants the need for this to have a bit of space so that the reader can see it and not forget it.
+	\medskip
+	\begin{point}
+		In the definition of the derivative the limit we will be using is the limit of a function!
+	\end{point}
+	
+	\subsection{Defining the Derivative}
+	
+	
+	\begin{definition}[Derivative as defined in Munkres \cite{munkres2018analysis}]
+		Let $A \subseteq \mathbb{R}$ and let $f : A \to \mathbb{R}$ be any function. Suppose that $A$ contains a neighborhood of the point $a$. We define the derivative of $f$ at $a$ by the equation $$f'(a) = \lim_{t \to 0} \frac{f(a+t) - f(a)}{t}$$ provided that the limit exists.
+	\end{definition}
+	
+	But wait before we can go any further we \textbf{really need too} unpack this definition and see what's going on under the hood. The reader at this point is probably going \textit{"Hey author, urmm how exactly are we using the definition of the limit of a function here? Heck what is the function we're even taking a limit of here"} and your author will get to that in a second, just bear with me. \\
+		
+	Personally I would define the derivative in a much cleaner way (and I will do so later), but the above definition is basically the convention in mathematics as it's taught in high-school and first-year undergraduate courses and (hopefully) everybody is used to it. \\
+		
+	Understanding this definition will not only bridge the gap between high-school level mathematics and more advanced pure mathematics, but it will also give the reader an idea into the amount of mathematical maturity (e.g asking the simplest questions, which people sometimes say are silly questions) needed to truly understand concepts. Okay I'll shut up for now and proceed to unpack this definition. \\
+	
+	\textbf{Observation 1.}  The neighbourhood of $a$ that Munkres is referring to is an open set $U \subseteq A$  containing $a$ that is open in $\mathbb{R}$ as opposed to $U$ being open in the subspace $A$. But what would happen if we wanted the neighborhood of $a$ to be an open set of the subspace $A$ as opposed to $\mathbb{R}$? Well then we could have all kinds of wacky domains on which the function  we're taking the limit of (not to be confused with $f$ ) would be defined and the limit would not exist. We'll give some examples of this a bit later on below \\
+	
+	\textbf{Observation 2.} This is quite a subtle one. The fact that the definition above states that we need $A$ to contain a neighborhood of $a$ which, as we know by Observation $1.$, means that $A$ needs to contain a subset $U \subseteq A$ which contains $a$ and is also open in $\mathbb{R}$, but then this means that $a$ needs to be an interior point of $A$, since $U$ must be open in $\mathbb{R}$. So $a$ must be an interior point of $A$ for $f$ to even meet the criteria needed for $f$ to be differentiable at $a$. (So if $a\not\in \operatorname{Int}(A)$ then we don't even meet the criteria needed for $f$ to be differentiable at $a$, so $f$ can't be differentiable at $a$) Later on in my definition of the derivative I will just let $A$ be an open set and be done. \\
+	
+	This in essence shows that for a function to be differentiable on some domain, that domain must be particularly "nice", specifically we need the domain to be an open set in $\mathbb{R}$ and the only open sets in $\mathbb{R}$ are unions of open intervals and $\mathbb{R}$ and $\emptyset$. \\ 
+		
+	\textbf{Observation 3.} In the definition of $f'(a)$ no explicit mention of the domain function we're taking the limit of is given, we know that the function we're taking the limit of is $$\frac{f(a+t) - f(a)}{t}$$ but it is unclear over what domain this function is defined, and it's unclear if the criteria needed to take the limit of this function is satisfied. \\
+	
+	Since $A$ contains a neighborhood of $a$, which I'll call $U$ and since $U$ is open in $\mathbb{R}$, there exists an $r > 0$ such that $B(a, r) \subseteq U \subseteq A$.  Then note that $B(a, r) = (a-r, a+r)$. \\ \\ Now a \textbf{key} realization to make is that $\frac{f(a+t) - f(a)}{t}$ is defined for all $t \neq 0$ such that $a + t$ belongs to the neighborhood (which in this case becomes our open ball) of the point $a$. 
+	The set of all such $t \in \mathbb{R}$ satisfying the properties given above is given by $$\{t \in \mathbb{R} \ | \  t\neq 0 \text{ and } a+t \in B(a, r) = (a-r, a+r)\} = B(0, r) \setminus \{0\}.$$ Thus we can define $\phi : B(0, r) \setminus \{0\} \to \mathbb{R}$ by $$\phi(t) = \frac{f(a+t) - f(a)}{t}$$ and then we can rewrite the derivative of $f$ as $$f'(a) = \lim_{t \to 0} \phi(t).$$ Furthermore note that $0 \in \mathbb{R}$ is a limit point of the set $B(0, r) \setminus \{0\}$ since any neighborhood of $0$ contains infinitely many members of $B(0, r) \setminus \{0\}$. Thus checking against our definition of a limit we see that all our criteria are satisfied so we can thus take the limit of $\phi$ as $t \to 0$\\
+	
+	\todog{Example of a function that is defined on an open set but which is not differentiable}
+	
+	\todog{4. Give an example of a function with a domain that's not nice and show why it isn't differentiable in two ways. Show that firstly that no point $a \in A$ has a nbhd in $\mathbb{R}$  which is  a subset of $A$ then go ahead anyway and show that the limit doesn't exist. Showing that the limit doesn't exist shows that the function won't be differentiable and why we must have the nbhd property as a priori for differentiability. This explains what G\&P meant when they said what they said in Differential Topology}
+
+
+	Now below we'll get onto my definition of the derivative.
+	
+	\begin{definition}[My definition of the Derivative]
+		Let $U \subseteq \mathbb{R}$ be an open set. Let $f : U \to \mathbb{R}$ be any function. Pick $a \in U$ and choose $r > 0$ such that $B(a, r) \subseteq U$. Define $\phi : B(0, r) \setminus \{0\} \to \mathbb{R}$ by $$\phi(t) = \frac{f(a+t) - f(a)}{t}.$$ Then we define the derivative of $f$ at $a$ as $$f'(a) = \lim_{t \to 0} \phi(t)$$ provided that the limit exists.
+	\end{definition}
+	
+	One of the Professors I speak to online bugged me about even being able to talk  about the differentiability of $f : [0, 1] \to \mathbb{R}$ because $[0, 1]$ is not an open interval. My method for dealing with that would've been to restrict $f$ to it's interior and then analyse differentiability of the restricted function. (which I don't see anything wrong with) but some people might want a more general definition in which incorporate more general domains so they don't have to think about restrictions (but then again their functions on these general domains will only be differentiable on the interiors of those domains anyway *shrugs*)
+	
+	
+	\begin{definition}[My more general definition of the Derivative]
+		Let $A \subseteq \mathbb{R}$ and let $f : A \to \mathbb{R}$ be any function. Pick $a \in \operatorname{Int}(A)$ and choose $r > 0$ such that $B(a, r) \subseteq \operatorname{Int}(A)$. Define $\phi : B(0, r) \setminus \{0\} \to \mathbb{R}$ by $$\phi(t) = \frac{f(a+t) - f(a)}{t}.$$ Then we define the derivative of $f$ at $a$ as $$f'(a) = \lim_{t \to 0} \phi(t)$$ provided that the limit exists.
+	\end{definition}
