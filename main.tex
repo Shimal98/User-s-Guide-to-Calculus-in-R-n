@@ -139,6 +139,25 @@
 	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces, let $E \subseteq X$ and let $f : E \to Y$ . Assume that $p$ is a limit point of $E$, then $f$ is not continuous at $p$ if and only if $$\lim_{x \to p} f(x) \neq f(p).$$ (Also if $ \lim_{x \to p} f(x)$ does not exist then vacuously we have that $\lim_{x \to p} f(x) \neq f(p)$)
 	 \end{corollary}
 	 
+	 \subsection{Infinite Limits and Limits at Infinity}
+	 
+	 
+	 \begin{definition}[Extended Real Numbers]
+	 	The extended real numbers is obtained by adding two elements and $+\infty$ and $-\infty$ to $\R$. 
+	 \end{definition}
+	 
+	 
+	 \begin{definition}[Neighborhoods of Infinity]
+	 	For any $c \in \R$, the set\\ $\{x \in \R \ | \ x > c\}$ is called a neighborhood of $+\infty$ and is written $(c, +\infty)$. Similarly, the set $\{ x \in \R \ | \ x < c\}$ which will be denoted by $(-\infty, c)$ is called a neighborhood of $-\infty$.
+	 \end{definition}
+	 
+	 
+	 \begin{definition}
+	 	Let $E \subseteq \R$ and let $f : E \to \R$ be any function. We say that $$\lim_{t \to x}f(t) = \alpha$$ where $\alpha$ and $x$ are in the extended real number system, if for every neighborhood $U$ of $A$ there exists a neighborhood $V$ of $x$ such that $V \cap E$ is non-empty and such that $f(t) \in U$ for all $t \in V \cap E$ for which $t \neq x$.
+	 \end{definition}
+	 
+	 
+	 
 	 We finish off this section with a user's guide to continuity in metric spaces.
 	 
 	 \subsection{User's guide to continuity in metric spaces}
