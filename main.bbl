@@ -33,4 +33,13 @@ S.~Shindin.
 \newblock {\em MATH310 - Real Analysis: Notes}.
 \newblock University of Kwa-Zulu Natal, 2018.
 
+\bibitem{wiki:xxx}
+{Wikipedia contributors}.
+\newblock Fundamental theorem of calculus --- {Wikipedia}{,} the free
+  encyclopedia.
+\newblock
+  \url{https://en.wikipedia.org/w/index.php?title=Fundamental_theorem_of_calculus&oldid=845588941},
+  2018.
+\newblock [Online; accessed 21-June-2018].
+
 \end{thebibliography}

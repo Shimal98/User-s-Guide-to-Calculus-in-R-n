@@ -2,10 +2,37 @@
 	
 	For an \textbf{excellent} treatment of Riemann Integration in $\mathbb{R}^1$ using Darboux sums (which make computing the upper and lower integral sums easier) see \cite{math310notes}. We list a bevy of results that are extremely useful in using the Fundamental Theorem of Calculus rigorously.
 	
+	
+	
 	\begin{theorem}
 		Let $f : [a, b] \to \mathbb{R}$. If $f \in C\left( [a, b]\right)$, then $f \in R\left( [a, b]\right)$. (In words if $f$ is continuous on $[a, b]$ then $f$ is Riemann integrable on $[a, b]$).
 	\end{theorem}
 	
-	\todog{1. Fundamental Theorem of Calculus Part 1}
+	
+	
+	\section{Fundamental Theorem of Calculus}
+	
+	\epigraph{Life is short, don't compute the integrals of continuous functions by the definition...pls}{\textit{Shimal Harichurn}} 
+	
+	So now we come onto the famous Fundamental Theorem of Calculus. The result above shows that all continuous functions defined on a closed interval are Riemann integrable, but how do we compute the integral of such a continuous function. Do we use the definition? We could, but that would just waste a ton of time. Instead we have two extremely powerful theorems, the Fundamental Theorem of Calculus (part 1) and the Fundamental Theorem of Calculus (part 2) which allow us to compute the integral of any continuous function defined on a closed interval under some appropriate conditions. (Also see \cite{wiki:xxx} where most of this was sourced from.)
+	
+	\begin{theorem}[Fundamental Theorem of Calculus Part $1.$]
+		Let $f : [a, b] \to \mathbb{R}$ be continuous. Let $F : [a, b] \to \mathbb{R}$ be defined by $$F(x) = \int_{a}^x f(t) dt.$$ Then $F$ is uniformly continuous on $[a, b]$ and differentiable on the open interval $(a, b)$ and $F'(x) = f(x)$ for all $x \in (a, b)$. That is $$\frac{d}{dx} \int_{a}^x f(t) dt = f(x)$$.
+	\end{theorem}
+	
+	The above result basically shows that anti-derivatives of $f$ always exist when $f$ is continuous.	The above result has a corollary
+	
+	\begin{corollary}
+		If $f : [a, b] \to \R$ is continuous and $F$ is an anti-derivative of $f$ in $[a, b]$ then $$\int_{a}^n f(t) dt = F(b) - F(a)$$
+	\end{corollary}
+	
+	This corollary assumes continuity on the whole interval. The result is strengthened slightly in the second part of the Fundamntal throem of Calculus.
+	
+	\begin{theorem}
+		Let $f : [a, b] \to \mathbb{R}$ and suppsoe that $F$ is an anti-derivarive of $f$ in $[a, b]$, that is $$F'(x) = f(x)$$ for all $x \in [a, b]$. If $f$ is Riemann integrable on $[a, b]$ then $$\int_{a}^bf(x) dx = F(b)-F(a)$$
+	\end{theorem}
+	
+	The second part is somewhat stronger than the corollary because it does not assume that $f$ is continuous
+
 	\todog{2. Fundamental Theorem of Calculus Part 2}
 	\todog{3. Measure theory results}
