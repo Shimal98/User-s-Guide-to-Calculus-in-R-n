@@ -1260,11 +1260,15 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D8F4EFC05A647149A375998975D05A68;1016.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 16842 strings out of 493305
- 316112 string characters out of 3138863
+ 16841 strings out of 493305
+ 316101 string characters out of 3138863
  376710 words of memory out of 3000000
  19954 multiletter control sequences out of 15000+200000
  20916 words of font info for 80 fonts, out of 3000000 for 9000
@@ -1285,9 +1289,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (25 pages, 276075 bytes).
+Output written on main.pdf (25 pages, 275711 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
  133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
