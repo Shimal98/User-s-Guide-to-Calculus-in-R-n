@@ -35,6 +35,7 @@
 
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\todog}{\todo[inline, color=green!40]}
+\newcommand{\newsection}{\newpage\section}
 
 \title{A User's Guide to Calculus in $\mathbb{R}^n$}
 \author{Shimal Harichurn}
@@ -87,6 +88,8 @@
 	
 	\todog{Show how the above theorem implies the corollary. Use the fact that the restriction of $f, g$ from the codomain of $\mathbb{C}$ to the set $$\Gamma = \{z \in \mathbb{C} \ | \ \operatorname{Im}(z) = 0\}$$ is continuous, then use the fact that $\mathbb{R} \times \{0\}$ is homeomorphic to $\Gamma$ and then the fact that $\R \times \{0\}$ is homeomorphic to $\R$ to conclude and arrive at the corollary.}
 	
+	\newpage
+	
 	\subsection{Limits}
 	
 	Limits will be invaluable to our study of calculus in $\R^n$. For example to even define the derivative in $\mathbb{R}^1$ we need to know the definition(s) of a limit in metric spaces. The reason for this is that we need the notion of a limit to even define the derivative rigorously. \\
@@ -107,7 +110,7 @@
 	 
 	 \medskip
 	 
-	 \begin{definition}[Limit of a function]
+	 \begin{definition}[Limit of a function]\hypertarget{limit-function-defn}
 	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces. Suppose that $E \subseteq X$. Let $f : E \to Y$ and suppose that $p$ is a limit point of $E$. We say that $$\lim_{x \to p} f(x) = q$$ if there exists a point $q \in Y$ with the property that for all $\epsilon > 0$ there exists a $\delta > 0$ such that $$0 < d_X(x, p) < \delta \implies d_Y((f(x), q) < \epsilon$$ for any $x \in B_{(X, d_x)}(p, \delta)$
 	 \end{definition}
 	 
@@ -139,11 +142,35 @@
 	 	Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces, let $E \subseteq X$ and let $f : E \to Y$ . Assume that $p$ is a limit point of $E$, then $f$ is not continuous at $p$ if and only if $$\lim_{x \to p} f(x) \neq f(p).$$ (Also if $ \lim_{x \to p} f(x)$ does not exist then vacuously we have that $\lim_{x \to p} f(x) \neq f(p)$)
 	 \end{corollary}
 	 
+	 \begin{theorem}
+	 	Let $X$ be a metric space and $E \subseteq X$. Suppose that $p$ is a limit point of $E$ and $f, g : X \to \mathbb{C}$ and that $$\lim_{x \to p} f(x) = a \in \mathbb{C}, \ \ \ \lim_{x \to p} g(x) = b \in \mathbb{C}$$Then  	
+	 	\begin{align*}
+	 	&\text{(i)} \ \  \ \ \lim_{x \to p}(f+g)(x) = a + b; \\
+	 	&\text{(ii)} \ \  \ \ \lim_{x \to p}(f\cdot g)(x) = a \cdot b; \\
+	 	&\text{(iii)} \ \  \ \ \lim_{x \to p}\left( \frac{f}{g}\right) (x) = \frac{a}{b} \ \ \ \text{if} \ \ b\neq 0.
+	 	\end{align*}
+	 	
+	 \end{theorem}
+	 
+	 This yields the weaker result;
+	 
+	  \begin{theorem}\hypertarget{limit-thm}
+	  	Let $X$ be a metric space and $E \subseteq X$. Suppose that $p$ is a limit point of $E$ and $f, g : X \to \mathbb{R}$ and that $$\lim_{x \to p} f(x) = a \in \R, \ \ \ \lim_{x \to p} g(x) = b \in \R.$$Then  	
+	  	\begin{align*}
+	  	&\text{(i)} \ \  \ \ \lim_{x \to p}(f+g)(x) = a + b; \\
+	  	&\text{(ii)} \ \  \ \ \lim_{x \to p}(f\cdot g)(x) = a \cdot b; \\
+	  	&\text{(iii)} \ \  \ \ \lim_{x \to p}\left( \frac{f}{g}\right) (x) = \frac{a}{b} \ \ \ \text{if} \ \ b\neq 0.
+	  	\end{align*}
+	  	
+	  \end{theorem}
+	  
+	  \newpage
+	 
 	 \subsection{Infinite Limits and Limits at Infinity}
 	 
 	 
-	 \begin{definition}[Extended Real Numbers]
-	 	The extended real numbers is obtained by adding two elements and $+\infty$ and $-\infty$ to $\R$. 
+	 \begin{definition}[Extended Real Number System]
+	 	The extended real numbers is obtained by adding two elements and $+\infty$ and $-\infty$ to $\R$. We'll denote the extended real numbers by the symbol $\overline{\R}$ (Not to be confused with the topological closure of $\R$)
 	 \end{definition}
 	 
 	 
@@ -157,9 +184,30 @@
 	 \end{definition}
 	 
 	 
+	 \begin{remark}
+	 	This definition above coincides with \hyperlink{limit-function-defn}{Definition 2.3} when $\alpha$ and $x$ are real numbers.
+	 \end{remark}
+	 
+	 The analogue of \hyperlink{limit-thm}{Theorem 2.2.4} is still true 
+	 
+	 \begin{theorem}
+	 		Let $X$ be a metric space and $E \subseteq X$. Suppose that $p \in \overline{\R}$ and $f, g : X \to \mathbb{R}$ and that $$\lim_{x \to p} f(x) = a \in \overline{\R}, \ \ \ \lim_{x \to p} g(x) = b \in \overline{\R}.$$Then  	
+	 		\begin{align*}
+	 		&\text{(i)} \lim_{x \to p} f(x) = a' \implies a' = a\\
+	 		&\text{(ii)} \ \  \ \ \lim_{x \to p}(f+g)(x) = a + b; \\
+	 		&\text{(iii)} \ \  \ \ \lim_{x \to p}(f\cdot g)(x) = a \cdot b; \\
+	 		&\text{(iv)} \ \  \ \ \lim_{x \to p}\left( \frac{f}{g}\right) (x) = \frac{a}{b} \ \ \ \text{if} \ \ b\neq 0.
+	 		\end{align*}	 		
+	 \end{theorem}
+	 
+	 \begin{point}
+	 	Note that $\infty -\infty$, $0 \cdot \infty$, $\frac{\infty}{\infty}$ and $\frac{a}{0}$ are not defined.
+	 \end{point}
+	 
 	 
 	 We finish off this section with a user's guide to continuity in metric spaces.
 	 
+	 \newpage
 	 \subsection{User's guide to continuity in metric spaces}
 	 
 	 \epigraph{Life is short, don't always prove continuity using $\epsilon$'s and $\delta$'s}{\textit{Shimal Harichurn \\ Your Author}}
@@ -316,6 +364,8 @@
 		\begin{theorem}\hypertarget{multi-operations-cont}
 			Let $(X, d)$ be a metric space and suppose that \\ $\mathbf{f}, \mathbf{g} : X \to \mathbb{R}^k$ are continuous functions, then $\mathbf{f} + \mathbf{g} : X \to \mathbb{R}^k$ defined by $$\left( \mathbf{f} + \mathbf{g}\right) (x) = \left( f_1(x) + g_1(x), \dots, f_k(x) + g_k(x)\right) $$ is continuous on $X$ and $\mathbf{f \cdot g} : X \to \mathbb{R}$ defined by $$\left( \mathbf{f \cdot g} \right)(x) =  \left( f_1(x) , \dots, f_k(x) \right)  \odot  \left( g_1(x), \dots,  g_k(x)\right) = f_1(x)\cdot g_1(x) + \dots f_k(x) \cdot g_k(x)$$ is continuous on $X$.
 		\end{theorem}
+		
+		\todog{Show that co-ordinate projections are continuous}
 		
 		\medskip
 		
