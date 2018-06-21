@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  21 JUN 2018 08:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  21 JUN 2018 08:42
 entering extended mode
 **./main.tex
 (main.tex
@@ -1092,7 +1092,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
 
-[13]
+[13] [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 337.
@@ -1105,20 +1105,21 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 337.
 
+[15]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 349.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 349.
+(hyperref)                removing `math shift' on input line 351.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 349.
+(hyperref)                removing `superscript' on input line 351.
 
-[14]
-Overfull \hbox (13.12418pt too wide) detected at line 365
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 351.
+
+
+Overfull \hbox (13.12418pt too wide) detected at line 369
 [] \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = [] \OMS/cmsy/m/n/12 
  [] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\O
 T1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 g[]\OT1/cmr/m/n/12 (\OML/cm
@@ -1129,31 +1130,31 @@ m/m/it/12 x\OT1/cmr/m/n/12 ) + [] \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 380.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 376.
+(hyperref)                removing `superscript' on input line 380.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 380.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 380.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 376.
+(hyperref)                removing `superscript' on input line 380.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\infty' on input line 376.
+(hyperref)                removing `\infty' on input line 380.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 380.
 
 (main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
@@ -1161,20 +1162,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-[15]) [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 386.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 386.
+[16]) [17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 386.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 386.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C7F6E05A7925F53BACD959E778CF3CB9;921.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 386.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 390.
  ) 
 Here is how much of TeX's memory you used:
- 16739 strings out of 493305
- 314028 string characters out of 3138863
- 375496 words of memory out of 3000000
+ 16740 strings out of 493305
+ 314035 string characters out of 3138863
+ 375500 words of memory out of 3000000
  19890 multiletter control sequences out of 15000+200000
  18375 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1194,9 +1195,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (16 pages, 250860 bytes).
+Output written on main.pdf (17 pages, 252668 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
+ 306 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
