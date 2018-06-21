@@ -2,11 +2,11 @@
 
 ## Goals of this project
 
-⋅⋅* Give a rigorous exposition of Calculus in R^n
-⋅⋅* Give a reigorous treatment of differential forms
-⋅⋅* Give a rigorous treatment of exterior derivative
-⋅⋅* Give a rigorous treatment of dx in integration
-⋅⋅* Give a rigorous treatment of smooth functions
+1. Give a rigorous exposition of Calculus in R^n
+2. Give a reigorous treatment of differential forms
+3. Give a rigorous treatment of exterior derivative
+4. Give a rigorous treatment of dx in integration
+5. Give a rigorous treatment of smooth functions
 
 ## Broad outlines
 
