@@ -35,7 +35,7 @@
 		Before we can get to defining the derivative, we need to ensure that the definition we're going to give actually makes sense. To do that we need the following theorem. Technically an author could give the definition of the derivative and explain why it's well-defined but I feel this way gives the reader a better idea as to what's going on.
 		
 		\begin{theorem}[The quotient function in the derivative is well-defined on a certain neighborhood]
-			Let $U \subseteq \R^m$ be an open set and let $f : U \to \R^n$ be any function. Pick $a = (a_1, \dots, a_m) \in U$ and choose $r > 0$ so that $$\Omega = \left(a_1 - r, a_1 + r \right) \times \left(a_2 - r, a_2 + r \right) \times \dots \times \left(a_m - r, a_m + r \right)   \subseteq U.$$ Let $L : \R^m \to \R^m$ be a linear map. Then define $$\Theta = \left((-r, r) \times (-r, r) \times \dots \times (-r, r) \right) \setminus \{0\}$$  and then now define $\phi_L : \Theta \to \R^n$ by $$\phi_L(h) = \frac{f(a+h) - f(a) - L(h)}{|h|}$$. Then $$\phi_l$$ is a well-defined function.
+			Let $U \subseteq \R^m$ be an open set and let $f : U \to \R^n$ be any function. Pick $a = (a_1, \dots, a_m) \in U$ and choose $r > 0$ so that $$\Omega = \left(a_1 - r, a_1 + r \right) \times \left(a_2 - r, a_2 + r \right) \times \dots \times \left(a_m - r, a_m + r \right)   \subseteq U.$$ Let $L : \R^m \to \R^m$ be a linear map. Then define $$\Theta = \left((-r, r) \times (-r, r) \times \dots \times (-r, r) \right) \setminus \{0\}$$  and then now define $\phi_L : \Theta \to \R^n$ by $$\phi_L(h) = \frac{f(a+h) - f(a) - L(h)}{|h|.}$$ Then $$\phi_L$$ is a well-defined function.
 		\end{theorem}
 		
 		\begin{proof}
@@ -46,11 +46,11 @@
 		
 		
 		\begin{remark}
-			This above theorem shows that the quotient function $\phi_L$ is well-defined on the open set $\Theta \subseteq \R^m$. Note that this open set $\Theta$ depends $r$.
+			This above theorem shows that the quotient function $\phi_L$ is well-defined on the open set $\Theta \subseteq \R^m$. Note that this open set $\Theta$ depends on $r$.
 		\end{remark}
 		
 			\begin{definition}[Rigorous definition of the Derivative in $\R^n$]
-				Let $U \subseteq \mathbb{R}^m$ be an open set. Let $f : U \to \mathbb{R}^m$ be any function. Pick $a = (a_1, \dots, a_m) \in U$ and choose $r > 0$ so that $$\Omega = \left(a_1 - r, a_1 + r \right) \times \left(a_2 - r, a_2 + r \right) \times \dots \times \left(a_m - r, a_m + r \right)   \subseteq U.$$ Let $\Gamma(\R^m, R^n)$ denote the set of linear maps from $\R^m \to \R^n$. Define $$\Theta = \left((-r, r) \times (-r, r) \times \dots \times (-r, r) \right) \setminus \{0\}$$  and then now define $\phi_L : \Theta \to \R^n$ by $$\phi_L(h) = \frac{f(a+h) - f(a) - L(h)}{|h|}$$ for $L \in \Gamma(\R^m, \R^n)$. By the above theorem $\phi_L$ is well-defined. Then if there exists a $L \in \Gamma(\R^m, \R^n)$ such that $$\lim_{|h| \to 0} \phi_L(h) = 0$$ we say that $f$ is differentiable at $a$ and we call the linear map $L$, the derivative of $f$ at $a$.
+				Let $U \subseteq \mathbb{R}^m$ be an open set. Let $f : U \to \mathbb{R}^m$ be any function. Pick $a = (a_1, \dots, a_m) \in U$ and choose $r > 0$ so that $$\Omega = \left(a_1 - r, a_1 + r \right) \times \left(a_2 - r, a_2 + r \right) \times \dots \times \left(a_m - r, a_m + r \right)   \subseteq U.$$ Let $\Gamma(\R^m, \R^n)$ denote the set of linear maps from $\R^m \to \R^n$. Define $$\Theta = \left((-r, r) \times (-r, r) \times \dots \times (-r, r) \right) \setminus \{0\}$$  and then now define $\phi_L : \Theta \to \R^n$ by $$\phi_L(h) = \frac{f(a+h) - f(a) - L(h)}{|h|}$$ for $L \in \Gamma(\R^m, \R^n)$. By the above theorem $\phi_L$ is well-defined. Then if there exists a $L \in \Gamma(\R^m, \R^n)$ such that $$\lim_{|h| \to 0} \phi_L(h) = 0$$ we say that $f$ is differentiable at $a$ and we call the linear map $L$, the derivative of $f$ at $a$.
 			\end{definition}
 		
 		\begin{remark}
@@ -58,7 +58,7 @@
 			\\ \\
 			Firstly note that $0 \in \R^n$ is a  limit point for the domain of $\phi_L$ so it makes sense to take the limit of $\phi_L$ as $|h| \to 0 \in \R$ as defined in the \hyperlink{limit-function-defn}{definition of the limit of a function}
 			\\ \\
-			Secondly note that since $U$ is open, there will \textbf{always} exist an $r > 0$ such that $\Gamma \subseteq U$. And since the well-definedness of the function $\phi_L$ depends on this $r > 0$ and such an $r$ always exists, we may safely remove it from our definition (as most textbook authors do) and thus remove the explicit need to introduce the new function $\phi_L$. 
+			Secondly note that since $U$ is open, there will \textbf{always} exist an $r > 0$ such that $\Omega \subseteq U$. And since the well-definedness of the function $\phi_L$ depends on this $r > 0$ and such an $r$ always exists, we may safely remove it from our definition (as most textbook authors do) and thus remove the explicit need to introduce the new function $\phi_L$. 
 			\\ \\
 			Finally since we don't need to explicitly introduce the new function $\phi_L$ which depends on a specific linear map, we can rewrite our definition as follows below.
 		\end{remark} 
@@ -68,14 +68,14 @@
 			
 			\begin{enumerate}
 				\item the quotient function $\phi_L$ is defined on the open set $\Theta$
-				\item  and that $\Theta$ depends on the $r > 0$ such that $\Gamma \subseteq U$
+				\item  and that $\Theta$ depends on the $r > 0$ such that $\Omega \subseteq U$
 				\item  and that existence of such an $r$ is always guaranteed since $U$ is open 
 			\end{enumerate}
-			and that everything that we're doing (e.g taking limits of the quotient function $\phi_L$) takes place on these open sets, $\Gamma$ and $\Theta$, then $\phi_L$ is always well-defined. The textbook authors understand this, but don't explicitly state it, and state the definition below, which is perfectly okay as long as one understands what is going on behind the scenes.
+			and that everything that we're doing (e.g taking limits of the quotient function $\phi_L$) takes place on these open sets, $\Omega$ and $\Theta$, then $\phi_L$ is always well-defined. The textbook authors understand this, but don't explicitly state it, and state the definition below, which is perfectly okay as long as one understands what is going on behind the scenes.
 		\end{point}
 		
 		\begin{point}
-			Everything above put together basically says that taking the limit is defined locally (and thus the derivative?), (see how $\Gamma$ and $\Theta$ affect the domain of the quotient function (and thus the derivative?))
+			Everything above put together basically says that taking the limit is defined locally (and thus the derivative?), (see how $\Omega$ and $\Theta$ affect the domain of the quotient function (and thus the derivative?))
 		\end{point}
 		
 			
