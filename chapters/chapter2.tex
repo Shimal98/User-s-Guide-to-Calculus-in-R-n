@@ -49,7 +49,7 @@
 		If $f$ is differentiable for every $a \in U$ we say that $f$ is differentiable on $U$. We call $\Omega_a$ a "qudef" neighbourhood of $a$ (I'm basically defining the term a "qudef" neighbourhood of $a$ to be a neighbourhood of $a$ which allows the quotient function $\phi$ to be well-defined). We say that $\Theta_r$ is a domain of definition for the quotient function, it depends on the $r$ from the open ball $\Omega_a$, so any domain of definition for a quotient function depends on finding a "qudef" neighbourhood first.
 	\end{remark}
 	
-	\todog{Try and remove the word "qudef" and replace it by open rectangle/open ball around $a$}
+	\todog{Try and remove the word "qudef" and replace it by open rectangle/open ball around $a$ that's a subset of $U$.}
 	
 	\begin{definition}[My definition of \textbf{the} derivative of a function on an open set]
 		Let $U \subseteq \mathbb{R}$ be an open set. Let $f : U \to \mathbb{R}$ be any function. If $f$ is differentiable for every $a \in U$, then we define the \textbf{derivative of $f$} to be the function  $f' : U \to \R$ defined by $$f'(a) = \lim_{t \to 0}\phi_{a}(t)$$ where $\phi_a : \Theta_r \to \R$ is defined by $$\phi_a(t) = \frac{f(a+t)-f(a)}{t}$$ and $\Theta_r$ is a domain of definition for the quotient function.
