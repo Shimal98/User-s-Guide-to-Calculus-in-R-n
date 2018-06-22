@@ -8,10 +8,10 @@
 \contentsline {chapter}{\numberline {2}Differentiation in $\mathbb {R}^1$}{15}{chapter.2}
 \contentsline {subsection}{\numberline {2.0.1}Prerequisites}{15}{subsection.2.0.1}
 \contentsline {subsection}{\numberline {2.0.2}Defining the Derivative}{15}{subsection.2.0.2}
-\contentsline {chapter}{\numberline {3}Integration in $\mathbb {R}^1$}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Fundamental Theorem of Calculus}{19}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}What is $dx$?}{20}{subsection.3.1.1}
-\contentsline {chapter}{\numberline {4}Differentiation in $\mathbb {R}^n$}{21}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Prerequisites}{21}{subsection.4.0.1}
-\contentsline {section}{\numberline {4.1}Defining the derivative}{22}{section.4.1}
-\contentsline {chapter}{\numberline {5}$C^k$ and $C^{\infty }$ functions}{27}{chapter.5}
+\contentsline {chapter}{\numberline {3}Integration in $\mathbb {R}^1$}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Fundamental Theorem of Calculus}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}What is $dx$?}{22}{subsection.3.1.1}
+\contentsline {chapter}{\numberline {4}Differentiation in $\mathbb {R}^n$}{23}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}Prerequisites}{23}{subsection.4.0.1}
+\contentsline {section}{\numberline {4.1}Defining the derivative}{24}{section.4.1}
+\contentsline {chapter}{\numberline {5}$C^k$ and $C^{\infty }$ functions}{29}{chapter.5}
