@@ -52,13 +52,13 @@
 		\end{remark}
 		
 			\begin{definition}[Rigorous definition of the Derivative in $\R^n$]
-				Let $U \subseteq \mathbb{R}^m$ be an open set. Let $f : U \to \mathbb{R}^m$ be any function. Pick $a = (a_1, \dots, a_m) \in U$ and choose $r > 0$ so that $$\Omega = \left(a_1 - r, a_1 + r \right) \times \left(a_2 - r, a_2 + r \right) \times \dots \times \left(a_m - r, a_m + r \right)   \subseteq U.$$ Let $\Gamma(\R^m, \R^n)$ denote the set of linear maps from $\R^m \to \R^n$. Define $$\Theta = \left((-r, r) \times (-r, r) \times \dots \times (-r, r) \right) \setminus \{0\}$$  and then now define $\phi_L : \Theta \to \R^n$ by $$\phi_L(h) = \frac{f(a+h) - f(a) - L(h)}{|h|}$$ for $L \in \Gamma(\R^m, \R^n)$. By the above theorem $\phi_L$ is well-defined. Then if there exists a $L \in \Gamma(\R^m, \R^n)$ such that $$\lim_{|h| \to 0} \phi_L(h) = 0$$ we say that $f$ is differentiable at $a$ and we call the linear map $L$, the derivative of $f$ at $a$.
+				Let $U \subseteq \mathbb{R}^m$ be an open set. Let $f : U \to \mathbb{R}^m$ be any function. Pick $a = (a_1, \dots, a_m) \in U$ and choose $r > 0$ so that $$\Omega = \left(a_1 - r, a_1 + r \right) \times \left(a_2 - r, a_2 + r \right) \times \dots \times \left(a_m - r, a_m + r \right)   \subseteq U.$$ Let $\Gamma(\R^m, \R^n)$ denote the set of linear maps from $\R^m \to \R^n$. Define $$\Theta = \left((-r, r) \times (-r, r) \times \dots \times (-r, r) \right) \setminus \{0\}$$  and then now define $\phi_L : \Theta \to \R^n$ by $$\phi_L(h) = \frac{f(a+h) - f(a) - L(h)}{|h|}$$ for $L \in \Gamma(\R^m, \R^n)$. By the above theorem $\phi_L$ is well-defined. Then if there exists a $L \in \Gamma(\R^m, \R^n)$ such that $$\lim_{h \to 0} \phi_L(h) = 0$$ we say that $f$ is differentiable at $a$ and we call the linear map $L$, the derivative of $f$ at $a$.
 			\end{definition}
 		
 		\begin{remark}
 			Now this is a rigorous but fairly cumbersome way to define the derivative. We'll show now how we'll work our way from this definition to the usual definition you'd see in a book like Munkres. 
 			\\ \\
-			Firstly note that $0 \in \R^n$ is a  limit point for the domain of $\phi_L$ so it makes sense to take the limit of $\phi_L$ as $|h| \to 0 \in \R$ as defined in the \hyperlink{limit-function-defn}{definition of the limit of a function}
+			Firstly note that $0 \in \R^n$ is a  limit point for the domain of $\phi_L$ so it makes sense to take the limit of $\phi_L$ as $h \to 0 \in \R^n$ as defined in the \hyperlink{limit-function-defn}{definition of the limit of a function}
 			\\ \\
 			Secondly note that since $U$ is open, there will \textbf{always} exist an $r > 0$ such that $\Omega \subseteq U$. And since the well-definedness of the function $\phi_L$ depends on this $r > 0$ and such an $r$ always exists, we may safely remove it from our definition (as most textbook authors do) and thus remove the explicit need to introduce the new function $\phi_L$. 
 			\\ \\
