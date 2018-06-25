@@ -105,6 +105,39 @@
 	  \end{theorem}
 	  
 	  \newpage
+	  
+	  \subsection{A very useful theorem}
+	  
+	  We now provide the reader with an extremely useful theorem to calculate derivatives by their definition in the next chapter.
+	  
+	  \begin{theorem}
+	  	Let $A \subseteq \R^n$ and let $f : A \setminus \{0\} \to \R^m$ and suppose that $A$ contains a neighborhood of $0 \in \R^n$. Now let $B \subseteq \R^n$  such that $0 \in B$ and $A \subseteq B$ and let $g : B \to \R^m$ be a continuous function such that $g(x) = f(x)$ for all $x \in A \setminus \{0\}$, then $$\lim_{x \to 0} f(x) = \lim_{x \to 0}g(x) = g(0)$$
+	  	\end{theorem}
+	  	
+	  	\begin{proof}
+	  		We claim that $\lim_{x \to 0} f(x) = g(0)$. By continuity of $g$ and the fact that $0$ is a limit point of $B$ (because $A \subseteq B$ and $A$ contains a neighborhood of $0$), it follows that $\lim_{x \to 0} g(x) = 0$. \\ \\Thus for any $\epsilon > 0$, there exists a $\delta > 0$ such that $0 < d_{\R^n}(x, 0) < \delta \implies d_{\R^m}(g(x), g(0)) < \epsilon$ for any $x \in  B_{\left( \R^n, d_{\R^n}\right) }(0, \delta)$. Now since $A$ contains a neighborhood of $0 \in \R^n$, there exists an $r > 0$ such that $B_{\left( \R^n, d_{\R^n}\right) }(0, r) \subseteq A$. Note also that $f(x) = g(x)$ for all $x \in B_{\left( \R^n, d_{\R^n}\right) }(0, r) \setminus \{0\}$. \\\\
+	  		Now let $\epsilon > 0$ be given, then there exists a $\delta > 0$ (since $\lim_{x \to 0}g(x) = g(0)$) such that $$0 < d_{\R^n}(x, 0) < \delta \implies d_{\R^m}(g(x), g(0)) = d_{\R^m}(f(x), g(0))  < \epsilon$$ for any $x \in  B_{\left( \R^n, d_{\R^n}\right) }(0, \delta) \setminus \{0\}$. \\ \\
+	  		Now because of the fact that the domain of $f$ might not contain all points of $B_{\left( \R^n, d_{\R^n}\right) }(0, \delta) \setminus \{0\}$ (i.e. $B_{\left( \R^n, d_{\R^n}\right) }(0, \delta) \setminus \{0\} \not\subseteq A \setminus \{0\}$) we need to ensure we can find a $\delta$ such that $f(x)$ is actually defined for every $x \in  B_{\left( \R^n, d_{\R^n}\right) }(0, \delta) \setminus \{0\}$. \\ \\
+	  		We have two cases either $r \leq \delta$ or $r > \delta$. \\ \\
+	  		If $r \leq \delta$ then it follows that $0 < d_{\R^n}(x, 0)  < r \implies d_{\R^m}(f(x), g(0)) < \epsilon$ for any $x \in  B_{\left( \R^n, d_{\R^n}\right) }(0, r)$ and thus $\lim_{x \to 0} f(x) = g(0)$. \\ \\
+	  		If $r > \delta$ then $B_{\left( \R^n, d_{\R^n}\right) }(0, \delta) \subseteq B_{\left( \R^n, d_{\R^n}\right) }(0, r)$ and so $f(x)$ is defined for any $x \in B_{\left( \R^n, d_{\R^n}\right) }(0, r)$ and there is nothing further to prove and it follows that $\lim_{x \to 0} f(x) = g(0)$. \\ \\ Thus we've proven that $$\lim_{x \to 0} f(x) = g(0).$$
+	  	\end{proof}
+	  	
+	  	We now give an example to show just how useful this theorem is.
+	  	
+	  	\begin{example}
+	  		Consider the following function $f(x) : \mathbb{R} \setminus \{0\} \to \mathbb{R}$ defined by $$f(x) = \frac{x^2}{x^4 + x^2}$$ prove that $$\lim_{x \to 0} \ f(x) = 1.$$
+	  	\end{example}
+	  	
+	  	\begin{proof}
+	  		Without the theorem we just proved above, we'd likely have to resort to proving this limit by the definition which would be a really painstaking task. With the theorem we proved above at hand though, we can simply do the following.
+	  		\\ \\
+	  		Note that for any $x \in \R \setminus \{0\}$ we have that $$f(x) =\frac{x^2}{x^4 + x^2} = \frac{1}{x^2+1}$$ and note that $g : \R \to \R$ defined by $g(x) = \frac{1}{x^2+1}$ is continuous on $\R$ (and in particular it is continuous at $0 \in \R$) and thus $$\lim_{x \to 0} g(x) = g(0) = \frac{1}{(0)^2 + 1} = 1.$$ Thus since $f(x) = g(x)$ for every $x \in \R \setminus \{0\}$ and $\R \setminus \{0\} \subseteq \R$ it follows by the above theorem that  $$\lim_{x \to 0} f(x) = \lim_{x \to 0}g(x) = g(0) = 1.$$
+	  	\end{proof}
+	  	
+	  	In fact as far as the author is aware, this theorem is used every single time someone calculates the derivative of a function by the definition of the derivative.
+	  
+	  \newpage
 	 
 	 \subsection{Infinite Limits and Limits at Infinity}
 	 
@@ -249,7 +282,7 @@
 	 \end{result}
 	 
 	 \begin{proof}
-	 	Let $U$ be open in $\R$, then $$\pi_i^{-1}[U] = \left\lbrace x \in \R^n \ | \ \pi_i(x) \in U \right\rbrace = \R \times \R \time \dots \times\underbrace{U}_{\text{$i$th position}} \times \R \times \dots \times \R$$ and since the topology on $\R^n$ induced by the euclidean metric and the product topology on $\R^n$ are equivalent, it follows that since $\R$ and $U$ are open in $\R$ a finite product of them is open in $\R^n$. Thus $\pi_i^{-1}[U]$ is open in $\R^n$. Thus $\pi_i$ is continuous.
+	 	Let $U$ be open in $\R$, then $$\pi_i^{-1}[U] = \left\lbrace x \in \R^n \ | \ \pi_i(x) \in U \right\rbrace = \R \times \R \times \dots \times\underbrace{U}_{\text{$i$th position}} \times \R \times \dots \times \R$$ and since the topology on $\R^n$ induced by the euclidean metric and the product topology on $\R^n$ are equivalent, it follows that since $\R$ and $U$ are open in $\R$ a finite product of them is open in $\R^n$. Thus $\pi_i^{-1}[U]$ is open in $\R^n$. Thus $\pi_i$ is continuous.
 	 \end{proof}
 	 
 	 
