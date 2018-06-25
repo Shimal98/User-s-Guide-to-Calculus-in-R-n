@@ -16,6 +16,7 @@
 \BOOKMARK [2][-]{subsection.3.1.1}{What is dx?}{section.3.1}% 16
 \BOOKMARK [0][-]{chapter.4}{Differentiation in Rn}{}% 17
 \BOOKMARK [1][-]{section.4.1}{Prerequisites}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.2}{Defining the derivative}{chapter.4}% 19
-\BOOKMARK [0][-]{chapter.5}{Ck and C functions}{}% 20
-\BOOKMARK [1][-]{section.5.1}{A User's guide to C functions}{chapter.5}% 21
+\BOOKMARK [2][-]{subsection.4.1.1}{Some continuity theorems}{section.4.1}% 19
+\BOOKMARK [1][-]{section.4.2}{Defining the derivative}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Ck and C functions}{}% 21
+\BOOKMARK [1][-]{section.5.1}{A User's guide to C functions}{chapter.5}% 22
