@@ -2,7 +2,7 @@
 
 	\chapter{Differentiation in $\mathbb{R}^1$}
 	Let's dive head on into it.
-	\subsection{Prerequisites}
+	\section{Prerequisites}
 	
 	
 	Now with the two notions of a limit defined we can define the derivative. This is quite an important point which warrants the need for this to have a bit of space so that the reader can see it and not forget it.
@@ -13,7 +13,7 @@
 	
 	
 	
-	\subsection{Defining the Derivative}
+	\section{Defining the Derivative}
 	
 	
 	\begin{definition}[Derivative as defined in Munkres \cite{munkres2018analysis}]
@@ -80,7 +80,26 @@
 	\begin{point}
 	An immediate consequence of my definition is that if $\operatorname{Int}(A) = \emptyset$ then $f$ is differentiable nowhere on $A$.
 \end{point}
-	
+
+
+
+\section{The Chain Rule}
+
+	\todog{Define $f : \R \to \R$ by $f(x) = \sin(3x)$, prove that $f$ is differentiable given that $\sin(x)$ is differentiable and compute the derivative}
+
+\section{Differentiation Theorems}
 	\todog{Differentiation Theorems}
-	\todog{}
-	\todo{Define $f : \R \to \R$ by $f(x) = \sin(3x)$, prove that $f$ is differentiable given that $\sin(x)$ is differentiable and compute the derivative}
+	
+\section{A User's Guide to Differentiation in $\R^1$}
+
+\epigraph{Life is short, don't always prove the derivative exists and calculate it using the definition}{\textit{Shimal Harichurn \\ Your Author}}
+
+ My quote above is basically saying that proving differentiability (and calculating the derivative) of every function using the definition of the derivative is a waste of time. We have some powerful theorems at hand that will make our lives a lot easier, so why not use them?  \\ \\ This section is intended to show the reader how we actually prove differentiability of functions between defined on $\R^1$ in practice. 
+ 
+  \begin{enumerate}
+  	\item We start off with a base pack of functions which we prove are differentiable using the  definition of the derivative and \hyperlink{limit-useful-thm}{this theorem on limits}
+  	\item We compose these base pack of functions to arrive at new functions which are differentiable using the chain rule, or given some function which we want to prove is continuous we decompose it into a composition of functions which we know to be differentiable
+  	\item Then we appeal to the fact that composition of differentiable functions are differentiable 
+  	\item We throw in the fact that addition of differentiable functions are differentiable (see \hyperlink{operations-cont}{Corollary 2.1.1} or \hyperlink{multi-operations-cont}{Theorem 5.1.2})
+  	\item Voila we've shown our new function is differentiable and we can calculate it using the differentiation theorems
+  \end{enumerate}
