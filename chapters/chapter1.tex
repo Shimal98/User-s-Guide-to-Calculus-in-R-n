@@ -138,6 +138,21 @@
 	  	In fact as far as the author is aware, this theorem is used every single time someone calculates the derivative of a function by the definition of the derivative.
 	  
 	  \newpage
+	  
+	  \subsection{"Limits from the Left" and "Limits from the Right" in $\R$ }
+	  
+	  
+	  \begin{definition}["Limit from the right"]
+	   Let $f : (a, b) \to \R$. Consider any point $x \in [a, b)$. We write $$\lim_{t \to x^+} f(t) = q$$ if $f(t_n) \to q$ as $n \to \infty$  for all sequences $\{t_n\}_{n \in \mathbb{N}} \subseteq (x, b)$ such that $t_n \to x$.
+	  \end{definition}
+	  
+	   \begin{definition}["Limit from the left"]
+	   	Let $f : (a, b) \to \R$. Consider any point $x \in (a, b]$. We write $$\lim_{t \to x^-} f(t) = q$$ if $f(t_n) \to q$ as $n \to \infty$  for all sequences $\{t_n\}_{n \in \mathbb{N}} \subseteq (a, x)$ such that $t_n \to x$.
+	   \end{definition}
+	   
+	   \begin{theorem}
+	   	Let $f: (a, b) \to \R$ and consider any point $x \in (a, b)$. Then $\lim_{t \to x}f(t)$ exists if and only if $$\lim_{t \to x^+} f(t) = \lim_{t \to x^-} f(t) = \lim_{t \to x} f(t)$$
+	   \end{theorem}
 	 
 	 \subsection{Infinite Limits and Limits at Infinity}
 	 

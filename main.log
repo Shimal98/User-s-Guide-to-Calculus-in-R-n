@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  29 JUN 2018 15:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  29 JUN 2018 15:15
 entering extended mode
 **./main.tex
 (main.tex
@@ -1076,41 +1076,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--135
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 171--175
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 142.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 142.
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--175
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--175
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
 
  []
 
-[12] [13]
-Overfull \hbox (4.78185pt too wide) in paragraph at lines 199--199
+[13] [14]
+Overfull \hbox (4.78185pt too wide) in paragraph at lines 214--214
 []\OT1/cmr/bx/n/17.28 User's guide to con-ti-nu-ity in met-ric spaces 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
-[15]) [16] (chapters/chapter2.tex
+[16]) [17] (chapters/chapter2.tex [18
+
+]
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1129,9 +1140,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[17
-
-]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
@@ -1156,7 +1165,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-[18]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
@@ -1171,7 +1180,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-[19] [20] [21]
+[21] [22] [23]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 93.
@@ -1189,7 +1198,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-) [22] (chapters/chapter3.tex
+) [24] (chapters/chapter3.tex
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1203,7 +1212,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
 
-[23
+[25
 
 ]
 
@@ -1214,7 +1223,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 42.
 
-) [24] (chapters/chapter4.tex
+) [26] (chapters/chapter4.tex
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1238,7 +1247,7 @@ m/m/it/12 x\OT1/cmr/m/n/12 ) + [] \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm
 /12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )
  []
 
-[25
+[27
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 44--47
@@ -1250,7 +1259,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--47
 
  []
 
-[26]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 59--66
 
  []
@@ -1265,7 +1274,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--66
 
  []
 
-[27] [28]) [29] (chapters/chapter5.tex [30
+[29] [30]) [31] (chapters/chapter5.tex [32
 
 ]
 Chapter 5.
@@ -1313,7 +1322,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 7.
 
-) (main.bbl [31] [32
+) (main.bbl [33] [34
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
@@ -1327,24 +1336,24 @@ Underfull \hbox (badness 1442) in paragraph at lines 37--44
 rg / w / index . php ? title =
  []
 
-) [33]
+) [35]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2960B2A49CD395BDE4E1E9AF4CF30B06;1484.
+(rerunfilecheck)             Checksum: 8945517642EFF5E2F3217FF8A1F0DAA9;1595.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
- 16889 strings out of 493305
- 316518 string characters out of 3138863
- 376787 words of memory out of 3000000
- 19967 multiletter control sequences out of 15000+200000
+ 16896 strings out of 493305
+ 316611 string characters out of 3138863
+ 377787 words of memory out of 3000000
+ 19968 multiletter control sequences out of 15000+200000
  21224 words of font info for 81 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,81p,924b,866s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,10n,81p,924b,868s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
@@ -1357,14 +1366,15 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/sym
-bols/msbm7.pfb>
-Output written on main.pdf (33 pages, 323668 bytes).
+ts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm
+7.pfb>
+Output written on main.pdf (35 pages, 335397 bytes).
 PDF statistics:
- 461 PDF objects out of 1000 (max. 8388607)
- 139 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
