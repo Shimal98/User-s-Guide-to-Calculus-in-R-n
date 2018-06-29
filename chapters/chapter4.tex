@@ -30,11 +30,53 @@
 			Note that $\odot$ refers to the dot product on the vector space $\mathbb{R}^k$. The above theorem shows that addition of vector-valued functions whose domains are metric spaces (which could possibly be $\mathbb{R}^m$ for any $m \in \mathbb{N}$)  are continuous, and so is taking the dot product of vector valued functions. Proofs of the above theorems can be found in \cite{rudin1964principles}
 		\end{remark}
 		
-		\section{Defining the derivative}
+		\section{The Directional Derivative}
+		
+		This is how the directional derivative is defined in \cite{munkres2018analysis}.
 		
 		
+		\begin{definition}[Directional Derivative]
+			Let $A \subseteq \R^m$ and let $f : A \to \R^n$. Suppose that $A$ contains a neighbourhood of $a = (a_1, \dots, a_m)$. Given $u= (u_1, \dots, u_m) \in \R^m$ with $u  \neq 0 \in \R^n$ define $$f'_a(u) = \lim_{t \to 0} \phi_u(t)$$ (provided the limit exists) where $\phi_u : \{ t \in \R \setminus \{0\} \ | \ a+tu \in A\} \to \R^n$ defined by $$\phi_u(t) = \lim_{t\to 0}\frac{f(a+tu)-f(a)}{t}$$
+		\end{definition}
 		
-		Before we can get to defining the derivative, we need to ensure that the definition we're going to give actually makes sense. To do that we need the following theorem. Technically an author could give the definition of the derivative and explain why it's well-defined but I feel this way gives the reader a better idea as to what's going on.
+		Now let $V$ be a neighborhood of $a$ then there exists an $r > 0$ such that $$(a_1 -r, a_1 + r) \times \dots \times (a_m -r, a_m+r) \subseteq V \subseteq A$$
+		
+		\begin{theorem}
+			Let $R = \max\{|u_1|, \dots, |u_m|\}$ then the open set $$\left(-\frac{r}{R}, \frac{r}{R} \right) \setminus \{0\}$$ is a set on which $\phi_u$ is well defined.
+		\end{theorem}
+		
+			\begin{proof}
+				Pick $i \in \{1, \dots, m\}$. We claim that $a_i + tu_i \in (a_r-r, a_i+r)$. We have two cases to examine $u_i \geq 0$ or $u_i < 0$. Suppose that $u_i \geq 0$ then $$a_i -r = a_i - \frac{r}{|u_i|}u_i \leq a_i - \frac{r}{R}u_i < a_i + tu_i < a_i + \frac{r}{R}u_i \leq a_i + \frac{r}{|u_i|}u_i = a_i + r.$$
+				 if $u_i < 0$ then 
+				 \begin{align*}
+				 a_i + tu_i &> a_i + \frac{r}{R}u_i \ \ \text{(since $r > 0$ and $R > 0$ and $u_i < 0$)} \\
+				 &\geq a_i + \frac{r}{|u_i|}u_i \\ 
+				 &= a_i -r
+				 \end{align*}
+				 and 
+				 \begin{align*}
+				 a_i + tu_i &< a_i - \frac{r}{R}u_i \ \ \text{(since $r > 0$ and $R > 0$ and $u_i < 0$ so $\frac{r}{R}u_i < 0$)} \\
+				 & \leq a_i - \frac{r}{|u_i|}u_i \\
+				 &= a_i - (-1)r \\
+				 &= a_i + r
+				 \end{align*}
+				 In both cases we have $$a_i -r <a_i + tu_i < a_i + r.$$ Thus $a_i + tu_i \in (a_i-r, a_i+r)$.`
+			\end{proof}
+		
+		\newpage
+		
+		\section{The Total Derivative}
+		
+		\bigskip
+		
+		\hrule
+		\medskip
+		\textbf{This is THE true derivative in $\R^n$}
+		\\
+		\hrule
+		\bigskip
+		
+		Before we can get to defining the total derivative, we need to ensure that the definition we're going to give actually makes sense. To do that we need the following theorem. Technically an author could give the definition of the derivative and explain why it's well-defined but I feel this way gives the reader a better idea as to what's going on.
 		
 		\begin{theorem}[The quotient function in the derivative is well-defined on a certain neighborhood]
 			Let $U \subseteq \R^m$ be an open set and let $f : U \to \R^n$ be any function. Pick $a = (a_1, \dots, a_m) \in U$ and choose $r > 0$ so that $$\Omega = \left(a_1 - r, a_1 + r \right) \times \left(a_2 - r, a_2 + r \right) \times \dots \times \left(a_m - r, a_m + r \right)   \subseteq U.$$ Let $L : \R^m \to \R^m$ be a linear map. Then define $$\Theta = \left((-r, r) \times (-r, r) \times \dots \times (-r, r) \right) \setminus \{0\}$$  and then now define $\phi_L : \Theta \to \R^n$ by $$\phi_L(h) = \frac{f(a+h) - f(a) - L(h)}{|h|.}$$ Then $$\phi_L$$ is a well-defined function.
@@ -95,5 +137,5 @@
 		
 		So from this point on now it's perfectly okay to use the above conventional definition.
 		
-		\todog{Rigorozie the directional derivative}
+		
 		
