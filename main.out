@@ -9,15 +9,16 @@
 \BOOKMARK [0][-]{chapter.2}{Differentiation in R1}{}% 9
 \BOOKMARK [1][-]{section.2.1}{Prerequisites}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.2}{Defining the Derivative}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{The Chain Rule}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.4}{Differentiation Theorems}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.5}{A User's Guide to Differentiation in R1}{chapter.2}% 14
-\BOOKMARK [0][-]{chapter.3}{Integration in R1}{}% 15
-\BOOKMARK [1][-]{section.3.1}{Fundamental Theorem of Calculus}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.1.1}{What is dx?}{section.3.1}% 17
-\BOOKMARK [0][-]{chapter.4}{Differentiation in Rn}{}% 18
-\BOOKMARK [1][-]{section.4.1}{Prerequisites}{chapter.4}% 19
-\BOOKMARK [2][-]{subsection.4.1.1}{Some continuity theorems}{section.4.1}% 20
-\BOOKMARK [1][-]{section.4.2}{Defining the derivative}{chapter.4}% 21
-\BOOKMARK [0][-]{chapter.5}{Ck and C functions}{}% 22
-\BOOKMARK [1][-]{section.5.1}{A User's guide to C functions}{chapter.5}% 23
+\BOOKMARK [1][-]{section.2.3}{Differentiation Theorems}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.4}{The Chain Rule}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.5}{L'Hospital's Rule}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.6}{A User's Guide to Differentiation in R1}{chapter.2}% 15
+\BOOKMARK [0][-]{chapter.3}{Integration in R1}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Fundamental Theorem of Calculus}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.1.1}{What is dx?}{section.3.1}% 18
+\BOOKMARK [0][-]{chapter.4}{Differentiation in Rn}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Prerequisites}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.1.1}{Some continuity theorems}{section.4.1}% 21
+\BOOKMARK [1][-]{section.4.2}{Defining the derivative}{chapter.4}% 22
+\BOOKMARK [0][-]{chapter.5}{Ck and C functions}{}% 23
+\BOOKMARK [1][-]{section.5.1}{A User's guide to C functions}{chapter.5}% 24

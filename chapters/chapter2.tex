@@ -85,12 +85,30 @@
 
 
 
-\section{The Chain Rule}
-
-	\todog{Define $f : \R \to \R$ by $f(x) = \sin(3x)$, prove that $f$ is differentiable given that $\sin(x)$ is differentiable and compute the derivative}
 
 \section{Differentiation Theorems}
-	\todog{Differentiation Theorems}
+	
+	\begin{theorem}
+		Suppose that $f, g : [a, b] \to \R$ and are differentiable at a point $x \in [a, b]$. Then $f+g, f\cdot g$ and $\frac{f}{g}$ are differentiable at $x$ and 
+		
+		
+		\begin{enumerate}[label=(\roman*)]
+			\item $$(f+g)'(x) = f'(x) + g'(x)$$
+			\item $$(f \cdot g)'(x) = f'(x)\cdot g(x) + f(x)\cdot g'(x)$$
+			\item $$\left( \frac{f}{g}\right)'(x) = \frac{g(x)\cdot f'(x) - g'(x) \cdot f(x)}{g^2(x)}$$
+		\end{enumerate}
+	\end{theorem}
+	
+	
+	\section{The Chain Rule}
+	
+	\begin{theorem}[The Chain Rule]
+		Suppose $f : [a, b] \to \R$ is continuous and $f'(x)$ exists at some point $x \in [a, b]$ and $g : I \to \R$ where $I \supseteq f\left[ [a, b]\right]$ and $g$ is differentiable at the point $f(x)$. If $h : [a, b] \to \R$ is defined by $h(t) = g(f(t))$ for all $t \in [a, b]$ then $h$ is differentiable at $x$ and $$h'(x) = g'\left( f(x)\right) \cdot f'(x)$$ 
+	\end{theorem}
+	
+	\todog{Define $f : \R \to \R$ by $f(x) = \sin(3x)$, prove that $f$ is differentiable given that $\sin(x)$ is differentiable and compute the derivative}
+	
+	\section{L'Hospital's Rule}
 	
 \section{A User's Guide to Differentiation in $\R^1$}
 

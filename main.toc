@@ -10,15 +10,16 @@
 \contentsline {chapter}{\numberline {2}Differentiation in $\mathbb {R}^1$}{19}{chapter.2}
 \contentsline {section}{\numberline {2.1}Prerequisites}{19}{section.2.1}
 \contentsline {section}{\numberline {2.2}Defining the Derivative}{19}{section.2.2}
-\contentsline {section}{\numberline {2.3}The Chain Rule}{23}{section.2.3}
-\contentsline {section}{\numberline {2.4}Differentiation Theorems}{24}{section.2.4}
-\contentsline {section}{\numberline {2.5}A User's Guide to Differentiation in $\mathbb {R}^1$}{24}{section.2.5}
-\contentsline {chapter}{\numberline {3}Integration in $\mathbb {R}^1$}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Fundamental Theorem of Calculus}{25}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}What is $dx$?}{26}{subsection.3.1.1}
-\contentsline {chapter}{\numberline {4}Differentiation in $\mathbb {R}^n$}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Prerequisites}{27}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Some continuity theorems}{27}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Defining the derivative}{28}{section.4.2}
-\contentsline {chapter}{\numberline {5}$C^k$ and $C^{\infty }$ functions}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}A User's guide to $C^{\infty }$ functions}{33}{section.5.1}
+\contentsline {section}{\numberline {2.3}Differentiation Theorems}{24}{section.2.3}
+\contentsline {section}{\numberline {2.4}The Chain Rule}{24}{section.2.4}
+\contentsline {section}{\numberline {2.5}L'Hospital's Rule}{24}{section.2.5}
+\contentsline {section}{\numberline {2.6}A User's Guide to Differentiation in $\mathbb {R}^1$}{24}{section.2.6}
+\contentsline {chapter}{\numberline {3}Integration in $\mathbb {R}^1$}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Fundamental Theorem of Calculus}{27}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}What is $dx$?}{28}{subsection.3.1.1}
+\contentsline {chapter}{\numberline {4}Differentiation in $\mathbb {R}^n$}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Prerequisites}{29}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Some continuity theorems}{29}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Defining the derivative}{30}{section.4.2}
+\contentsline {chapter}{\numberline {5}$C^k$ and $C^{\infty }$ functions}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}A User's guide to $C^{\infty }$ functions}{35}{section.5.1}
