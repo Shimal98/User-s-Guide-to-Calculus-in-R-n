@@ -34,34 +34,48 @@
 		
 		This is how the directional derivative is defined in \cite{munkres2018analysis}.
 		
-		
-		\begin{definition}[Directional Derivative]
-			Let $A \subseteq \R^m$ and let $f : A \to \R^n$. Suppose that $A$ contains a neighbourhood of $a = (a_1, \dots, a_m)$. Given $u= (u_1, \dots, u_m) \in \R^m$ with $u  \neq 0 \in \R^n$ define $$f'_a(u) = \lim_{t \to 0} \phi_u(t)$$ (provided the limit exists) where $\phi_u : \{ t \in \R \setminus \{0\} \ | \ a+tu \in A\} \to \R^n$ defined by $$\phi_u(t) = \lim_{t\to 0}\frac{f(a+tu)-f(a)}{t}$$
-		\end{definition}
-		
-		Now let $V$ be a neighborhood of $a$ then there exists an $r > 0$ such that $$(a_1 -r, a_1 + r) \times \dots \times (a_m -r, a_m+r) \subseteq V \subseteq A$$
+		To ensure that the quotient function in the derivative is well defined we first prove the following theorem.
 		
 		\begin{theorem}
-			Let $R = \max\{|u_1|, \dots, |u_m|\}$ then the open set $$\left(-\frac{r}{R}, \frac{r}{R} \right) \setminus \{0\}$$ is a set on which $\phi_u$ is well defined.
+		Let $f : A\subseteq \R^m$ and let $f : A \to \R^n$. Suppose that $A$ contains a neighbourhood $V$ of $a = (a_1, \dots, a_m)$. Choose $r > 0$ such that $$(a_1 -r, a_1 + r) \times \dots \times (a_m -r, a_m+r) \subseteq V \subseteq A.$$ Pick $u =(u_1, \dots, u_m) \in \R^m$ such that $u \neq 0 \in \R^m$ and put $R = \max\{|u_1|, \dots, |u_m|\}$ then the open set $$\Theta = \left(-\frac{r}{R}, \frac{r}{R} \right) \setminus \{0\}$$ is a set on which $\phi_{u} :  \Theta \to \R^n$ defined by $$\phi_{u}(t) = \frac{f(a+tu)-f(a)}{t}$$  is well defined.
 		\end{theorem}
 		
 			\begin{proof}
-				Pick $i \in \{1, \dots, m\}$. We claim that $a_i + tu_i \in (a_r-r, a_i+r)$. We have two cases to examine $u_i \geq 0$ or $u_i < 0$. Suppose that $u_i \geq 0$ then $$a_i -r = a_i - \frac{r}{|u_i|}u_i \leq a_i - \frac{r}{R}u_i < a_i + tu_i < a_i + \frac{r}{R}u_i \leq a_i + \frac{r}{|u_i|}u_i = a_i + r.$$
-				 if $u_i < 0$ then 
-				 \begin{align*}
-				 a_i + tu_i &> a_i + \frac{r}{R}u_i \ \ \text{(since $r > 0$ and $R > 0$ and $u_i < 0$)} \\
-				 &\geq a_i + \frac{r}{|u_i|}u_i \\ 
-				 &= a_i -r
-				 \end{align*}
-				 and 
-				 \begin{align*}
-				 a_i + tu_i &< a_i - \frac{r}{R}u_i \ \ \text{(since $r > 0$ and $R > 0$ and $u_i < 0$ so $\frac{r}{R}u_i < 0$)} \\
-				 & \leq a_i - \frac{r}{|u_i|}u_i \\
-				 &= a_i - (-1)r \\
-				 &= a_i + r
-				 \end{align*}
-				 In both cases we have $$a_i -r <a_i + tu_i < a_i + r.$$ Thus $a_i + tu_i \in (a_i-r, a_i+r)$.`
+				To show that $\phi_{u}$ is well-defined it suffices to show that for each $t \in \Theta$ we have $a+ tu \in VA$. So to that end pick $t \in \Theta$ and $i \in \{1, \dots, m\}$. We claim that $a_i + tu_i \in (a_r-r, a_i+r)$. We have two cases to examine $u_i \geq 0$ or $u_i < 0$. Suppose that $u_i \geq 0$ then $$a_i -r = a_i - \frac{r}{|u_i|}u_i \leq a_i - \frac{r}{R}u_i < a_i + tu_i < a_i + \frac{r}{R}u_i \leq a_i + \frac{r}{|u_i|}u_i = a_i + r.$$
+				if $u_i < 0$ then 
+				\begin{align*}
+				a_i + tu_i &> a_i + \frac{r}{R}u_i \ \ \text{(since $r > 0$ and $R > 0$ and $u_i < 0$)} \\
+				&\geq a_i + \frac{r}{|u_i|}u_i \\ 
+				&= a_i -r
+				\end{align*}
+				and 
+				\begin{align*}
+				a_i + tu_i &< a_i - \frac{r}{R}u_i \ \ \text{(since $r > 0$ and $R > 0$ and $u_i < 0$ so $\frac{r}{R}u_i < 0$)} \\
+				& \leq a_i - \frac{r}{|u_i|}u_i \\
+				&= a_i - (-1)r \\
+				&= a_i + r
+				\end{align*}
+				In both cases we have $$a_i -r <a_i + tu_i < a_i + r.$$ Thus $a_i + tu_i \in (a_i-r, a_i+r)$.`Hence $$a + tu \in  (a_1 -r, a_1 + r) \times \dots \times (a_m -r, a_m+r) \subseteq V$$ as desired.
 			\end{proof}
+			
+			\begin{remark}
+				We call $\Theta$ a domain of definition for the quotient function $\phi_u$.
+			\end{remark}
+		
+		With this theorem at hand we can now go ahead and define the directional derivative.
+		
+		\begin{definition}[Directional Derivative]
+			Let $A \subseteq \R^m$ and let $f : A \to \R^n$. Suppose that $A$ contains a neighbourhood of $a$. Given $u \in \R^m$ with $u  \neq 0 \in \R^n$ define $\phi_u : \Theta \to \R^n$  by $$\phi_u(t) = \frac{f(a+tu)-f(a)}{t}$$ where $\Theta$ is any domain of definition for the quotient function $\phi_u$. Then we may define $$f'_u(a) = \lim_{t \to 0} \phi_u(t)$$ (provided the limit exists). We call $f'_u(a)$ the directional derivative of $f$ at $a$ with respect to the vector $u$.
+		\end{definition}
+		
+		
+		\begin{remark}
+			Note that the domain of definition $\Theta$ for the quotient function $\phi_u$ depends on both $a$ and $u$!
+		\end{remark}
+
+		
+		
+		
 		
 		\newpage
 		
