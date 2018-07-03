@@ -83,11 +83,11 @@
 		
 		\bigskip
 		
-		\hrule
+	
 		\medskip
 		\textbf{This is THE true derivative in $\R^n$}
 		\\
-		\hrule
+
 		\bigskip
 		
 		Before we can get to defining the total derivative, we need to ensure that the definition we're going to give actually makes sense. To do that we need the following theorem. Technically an author could give the definition of the derivative and explain why it's well-defined but I feel this way gives the reader a better idea as to what's going on.
@@ -150,6 +150,14 @@
 		\end{definition}
 		
 		So from this point on now it's perfectly okay to use the above conventional definition.
+		
+		\begin{point}
+				 Since every linear map $L \in \Gamma(\R^m, \R^n)$ can be expressed (for every $x \in \R^m$) as $L(x) = A \cdot x$ for some fixed $n \times m$ matrix $A$ (and where $\cdot$ represents matrix multiplication) authors will write $Df(a)\cdot v$ where in this case they identify the derivative of $f$ at $a$ which is the linear map $Df(a)$ with its corresponding matrix instead of writing $\left(Df(a)\right)(v)$. This is the case in the theorem that follows.
+		\end{point}
+		
+		\begin{theorem}
+			Let $U \subseteq \R^m$  be an open set and let  $f : U \to \R^n$. If $f$ is differentiable at $a \in U$, then all the directional derivatives of $f$ at $a$ exist and $$f'_a(u) = Df(a) \cdot u$$ 
+		\end{theorem}
 		
 		
 		

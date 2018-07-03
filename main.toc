@@ -22,6 +22,6 @@
 \contentsline {subsection}{\numberline {4.1.1}Some continuity theorems}{29}{subsection.4.1.1}
 \contentsline {section}{\numberline {4.2}The Directional Derivative}{30}{section.4.2}
 \contentsline {section}{\numberline {4.3}The Total Derivative}{32}{section.4.3}
-\contentsline {chapter}{\numberline {5}$C^k$ and $C^{\infty }$ functions}{35}{chapter.5}
-\contentsline {section}{\numberline {5.1}A User's guide to $C^{\infty }$ functions}{35}{section.5.1}
-\contentsline {chapter}{\numberline {6}Differential Forms}{37}{chapter.6}
+\contentsline {chapter}{\numberline {5}$C^k$ and $C^{\infty }$ functions}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}A User's guide to $C^{\infty }$ functions}{37}{section.5.1}
+\contentsline {chapter}{\numberline {6}Differential Forms}{39}{chapter.6}
