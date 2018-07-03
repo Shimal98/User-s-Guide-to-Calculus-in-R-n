@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  2 JUL 2018 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  3 JUL 2018 04:18
 entering extended mode
 **./main.tex
 (main.tex
@@ -1093,44 +1093,42 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 142.
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 186--190
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--190
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--190
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
 
  []
 
-[13] [14]
-Overfull \hbox (4.78185pt too wide) in paragraph at lines 214--214
+[14] [15]
+Overfull \hbox (4.78185pt too wide) in paragraph at lines 221--221
 []\OT1/cmr/bx/n/17.28 User's guide to con-ti-nu-ity in met-ric spaces 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
-[16]) [17] (chapters/chapter2.tex [18
-
-]
+[17]) [18] (chapters/chapter2.tex
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1149,7 +1147,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[19]
+[19
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
@@ -1371,17 +1371,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9A8512CDEDD4F6D6771EDACC8CE8A912;1786.
+(rerunfilecheck)             Checksum: 447716DE7508794F0016F7DD6E35A41C;1871.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 17197 strings out of 493305
- 321679 string characters out of 3138863
- 382842 words of memory out of 3000000
- 20245 multiletter control sequences out of 15000+200000
+ 17202 strings out of 493305
+ 321767 string characters out of 3138863
+ 382890 words of memory out of 3000000
+ 20248 multiletter control sequences out of 15000+200000
  21533 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,13n,81p,924b,870s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,13n,81p,924b,884s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
@@ -1400,9 +1400,9 @@ sfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/m
 sbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm
 7.pfb>
-Output written on main.pdf (41 pages, 351745 bytes).
+Output written on main.pdf (41 pages, 353120 bytes).
 PDF statistics:
- 536 PDF objects out of 1000 (max. 8388607)
- 161 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 543 PDF objects out of 1000 (max. 8388607)
+ 163 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 
